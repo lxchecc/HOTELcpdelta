@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Codes</title>
+<link href="/index/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="/index/js/jquery.min.js"></script>
+<script src="/index/layer/layer.js" type="text/javascript"></script>
+<script src="/index/layer/jquery-1.8.3.min.js" type="text/javascript"></script>
+<!-- Custom Theme files -->
+<!--theme-style-->
+<link href="/index/css/style.css" rel="stylesheet" type="text/css" media="all" />	
+<!--//theme-style-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta property="og:title" content="Vide" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!---->
+<script src="/index/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="/index/css/font-awesome.min.css"> 
+<!---->
+<link rel="stylesheet" href="/index/css/flexslider.css" type="text/css" media="screen" />
+<link href='http://fonts.googleapis.com/css?family=Nunito:400,700,300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800italic,800,700italic,700,600italic,600,400italic,300italic,300' rel='stylesheet' type='text/css'>
+<!---strat-date-piker---->
+</head>
+<body>
+	<div class="banner">
+		
+	</div>
+    <div class="header">
+		<div class="container">
+			<div class="header-menu">
+				<nav class="navbar navbar-default">
+					<div class="container-fluid">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+						  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						  </button>
+						  <div class="navbar-brand logo">
+								<h1><a href="index.html"><span>Best  </span> Hotel</a></h1>
+							</div>
+						</div>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						   <ul class="nav navbar-nav">
+							<li class="active"><a href="/index/index/index" data-hover="Home">首页</a></li>
+							<li><a href="/index/Meal/meal" data-hover="About">房间餐</a></li>
+							<li><a data-hover="Restaurant" href="/index/Restaurant/restaurant">餐厅</a></li>
+							<li><a data-hover="Gallery" href="/index/Describe/describe">简介</a></li>
+							<li><a data-hover="Rooms" href="/index/Rooms/rooms">房间</a></li>
+							<li><a  href="/index/Destine/destine" data-hover="codes">预定</a></li>
+							<li><a data-hover="Contact" href="/index/Contact/contact.html">留言</a></li>
+							{if empty($Think.session.username)}
+							<li><a href="/index/User/login">登录/注册</a></li>
+							{else}
+							<li><a href="/index/User/loginOut">注销</a></li>
+							{/if}
+							 
+						  </ul>
+						</div><!-- /.navbar-collapse -->
+					</div><!-- /.container-fluid -->
+				</nav>
+			<div class="clearfix"></div>
+			</div>	
+		</div> 
+	</div>
+		<!--header-->
+		<div class="content">
+		<div class="page">
+			<div class="container">
+				<div class="short-heading">
+					<a name="first">
+					<a name="second">
+					<a name="three">
+					<a name="four">
+					<a name="five">
+					<a name="six">
+					<h2 class="tittle">My choice</h2>
+				</div>
+				<!--button-->
+				<div class="grid_3 grid_4">
+				  <div class="bs-example animated wow fadeInDown" data-wow-duration="1000ms">
+					
+					</div>
+				  </div>
+		  <!--buttons-->
+				  <p class="grid1">
+					<button type="button" class="btn btn-lg btn-default" id="more">显示更多</button>
+					<button type="button" class="btn btn-lg btn-primary">--》</button>
+					<button type="button" class="btn btn-lg btn-danger"><a href="#diCai">我的菜单</a></button>
+					<button type="button" class="btn btn-lg btn-success"><a href="#diRoom">订单(房间)</a></button>
+					<button type="button" class="btn btn-lg btn-info"><a href="#rest">订单(餐厅)</a></button>
+					<button type="button" class="btn btn-lg btn-warning"><a href="#cai">支付菜单</a></button>
+					<button type="button" class="btn btn-lg btn-success"><a href="#room">我的房间</a></button>
+					<button type="button" class="btn btn-lg btn-info"><a href="#canting">我的餐厅</a></button>
+				  </p>
+			  <!--bages-->
+			  	<a name="diCai">
+			 	<div class="page-header">
+					<h4><a href="#first">我的菜单</a></h4>
+				</div>
+				<div class="bs-example animated wow fadeInLeft" data-wow-duration="1000ms" data-example-id="simple-table">
+					<table class="table">
+					  <caption>未付款的订单</caption>
+					  <thead>
+						<tr>
+						  <th>编号</th>
+						  <th>种类名</th>
+						  <th>图片</th>
+						  <th>价格</th>
+						  <th>操作1</th>
+						  <th>操作2</th>
+						</tr>
+					  </thead>
+					  <tbody>
+
+					
+					  </tbody>
+					</table>
+				</div>
+			   <!--Progress bars-->
+			   	<a name="diRoom">
+				<div class="page-header animated wow fadeInLeft" data-wow-duration="1000ms">
+					<h4><a href="#second">我的订单(房间)</a></h4>
+				</div>
+				<div class="bs-example animated wow fadeInLeft" data-wow-duration="1000ms" data-example-id="simple-table" id="content">
+					<table class="table">
+					  <caption>未付款的订单</caption>
+					  <thead>
+						<tr>
+						  <th>房间号</th>
+						  <th>房间类型</th>
+						  <th>图片</th>
+						  <th>房间价格</th>
+						  <th>入住时间</th>
+						  <th>退房时间</th>
+						  <th>操作1</th>
+						  <th>操作2</th>
+						</tr>
+					  </thead>
+					  <tbody>
+					  
+					  </tbody>
+					</table>
+					
+				</div>
+			  <!--//Progress bars-->
+			  <!-- 餐厅 -->
+			  <a name="rest">
+			  <div class="page-header animated wow fadeInLeft" data-wow-duration="1000ms">
+					<h4><a href="#three">我的订单(餐厅)</a></h4>
+				</div>
+				<div class="bs-example animated wow fadeInLeft" data-wow-duration="1000ms" data-example-id="simple-table" id="content">
+					<table class="table">
+					  <caption>未付款的订单</caption>
+					  <thead>
+						<tr>
+						  <th>餐厅号</th>
+						  <th>餐厅类型</th>
+						  <th>图片</th>
+						  <th>房间价格</th>
+						  <th>入住时间</th>
+						  <th>退房时间</th>
+						  <th>操作1</th>
+						  <th>操作2</th>
+						</tr>
+					  </thead>
+					  <tbody>
+					
+					  </tbody>
+					</table>
+					
+				</div>
+				<!--Panels-->
+				<a name="cai">
+				<div class="page-header">
+					<h4><a href="#four">订单处理(菜单)</a></h4>
+				</div>
+				<div class="bs-example animated wow fadeInLeft" data-wow-duration="1000ms" data-example-id="simple-table">
+					<table class="table">
+					  <caption>我的菜单</caption>
+					  <thead>
+						<tr>
+						  <th>编号</th>
+						  <th>种类名</th>
+						  <th>图片</th>
+						  <th>价格</th>
+						  <th>操作1</th>
+						  <th>操作2</th>
+						</tr>
+					  </thead>
+					  <tbody>
+					
+					  </tbody>
+
+					</table>
+				</div>
+			   <!--//Panels-->
+			   <a name="room">
+			   <div class="page-header animated wow fadeInLeft" data-wow-duration="1000ms">
+					<h4><a href="#five">订单处理(房间)</a></h4>
+				</div>
+				<div class="bs-example animated wow fadeInLeft" data-wow-duration="1000ms" data-example-id="simple-table" id="content">
+					<table class="table">
+					  <caption>我的房间</caption>
+					  <thead>
+						<tr>
+						  <th>房间号</th>
+						  <th>房间类型</th>
+						  <th>图片</th>
+						  <th>房间价格</th>
+						  <th>入住时间</th>
+						  <th>退房时间</th>
+						  <th>操作1</th>
+						  <th>操作2</th>
+						</tr>
+					  </thead>
+					  <tbody>
+					  
+					  </tbody>
+					</table>	
+				</div>
+
+				<!-- 客厅 -->
+				<a name="canting">
+				<div class="page-header animated wow fadeInLeft" data-wow-duration="1000ms">
+					<h4><a href="#six">订单处理(餐厅)</a></h4>
+				</div>
+				<div class="bs-example animated wow fadeInLeft" data-wow-duration="1000ms" data-example-id="simple-table" id="content">
+					<table class="table">
+					  <caption>我的餐厅</caption>
+					  <thead>
+						<tr>
+						  <th>餐厅号</th>
+						  <th>餐厅类型</th>
+						  <th>图片</th>
+						  <th>餐厅价格</th>
+						  <th>预定时间</th>
+						  <th>退订时间</th>
+						  <th>操作1</th>
+						  <th>操作2</th>
+						</tr>
+					  </thead>
+					  <tbody>
+					  
+					  </tbody>
+					</table>	
+				</div>
+				
+			</div>
+				<div style="float:right;margin-right:200px;">总计:<span style="color:red;margin-left:20px;">{$num}</span>
+				<button type="button" class="btn btn-lg btn-success" style="font-size:12px;margin-left:20px;" onclick="zong()">付款</button>
+				</div>
+
+		</div>
+
+	</div>
+
+		<div class="footer-section">
+			<div class="container">
+				<div class="footer-grids">
+					<div class="col-md-3 footer-grid">
+						<h4>Get In Touch</h4>
+						<ul>
+							<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i> Office : 0041-456-3692</li>
+							<li><i class="glyphicon glyphicon-phone" aria-hidden="true"></i> Mobile : 0200-123-4567</li>
+							<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i> <a href="#"><a href="mailto:info@example.com">info@example.com</a></a></li>
+							<li><i class="glyphicon glyphicon-print" aria-hidden="true"></i> Fax : 0091-789-456100</li>
+						</ul>
+					</div>
+					<div class="col-md-3 footer-grid">
+						<h4>Hotel top links</h4>
+						<ul>
+							<li>Our Story</li>
+							<li>Sleep Program</li>
+							<li>Executive Travel Program</li>
+							<li>Enriched Wellness</li>
+						</ul>
+					</div>
+					<div class="col-md-3 footer-grid">
+						<h4>Our Rooms</h4>
+						<ul>
+							<li>Superior Room</li>
+							<li>Deluxe Room</li>
+							<li>Business Room</li>
+							<li>Executive Corner Room</li>
+						</ul>
+					</div>
+					<div class="col-md-3 footer-grid">
+						<h4>Our Services </h4>
+						<ul>
+							<li>Room services</li>
+							<li>Free internet Wifi</li>
+							<li>Television (50 channels)</li>
+							<li>Pets allowed</li>
+						</ul>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+		<!--footer-->
+			<div class="copy-section">
+				<div class="container">
+					<div class="footer-top">
+						<p>Copyright &copy; 2016.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+					</div>
+					<div class="social-icons">
+						<a href="#"><i class="icon"></i></a>
+						<a href="#"><i class="icon1"></i></a>
+						<a href="#"><i class="icon2"></i></a>
+						<a href="#"><i class="icon3"></i></a>
+					</div>
+				</div>
+			</div>
+	<!--footer-->
+
+</body>
+<script type="text/javascript">
+
+
+
+function yichu(id)
+{
+	
+		
+};
+function addCai(id)
+{
+	
+		
+};
+function addroom(id)
+{
+	
+		
+};
+function addrest(id)
+{
+	
+		
+};
+
+function zong()
+{
+	
+};
+
+function refund(id)
+{
+	
+};
+</script>
+</html>

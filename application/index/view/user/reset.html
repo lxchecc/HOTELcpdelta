@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+<title>Home</title>
+<meta property="wb:webmaster" content="0df51aa2c198a6cb" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> 
+addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } 
+</script>
+
+<!-- css files -->
+<link href="/index/login/css/style.css" rel='stylesheet' type='text/css' media="all" />
+<!-- /css files -->
+<script src="/index/login/js/jquery-1.8.3.min.js" type="text/javascript"></script>
+<style type="text/css">
+	::-webkit-input-placeholder { /* WebKit browsers */
+		color:#990;
+	}
+</style>
+</head>
+<body>
+<h1>Register AND Login</h1>
+<div class="log">
+	<div class="content1">
+		<h2>登录</h2>
+		<form id="login">
+			<input type="text" name="userid" value="" placeholder="请输入手机号或邮箱" onfocus="this.placeholder = '';" onblur="if (this.placeholder == '') {this.placeholder = '请输入手机号或邮箱';}" autocomplete="off">
+			<input type="password" name="passwd" value="" placeholder="请输入密码" onfocus="this.placeholder = '';" onblur="if (this.placeholder == '') {this.placeholder = '请输入密码';}">
+			<div class="button-row">
+				<input type="button" class="sign-in" value="登录">
+				<input type="reset" class="reset" value="重置">
+				<div class="clear"></div>
+			</div>
+		</form>
+		 <p><a href="/index/User/weibo"><img src="/index/images/weibo_login.png" title="点击进入授权页面" alt="点击进入授权页面" border="0" /></a></p>
+	</div>
+	<div class="content2">
+		
+		<h2><span id="phone">手机注册</span> | <span id="email">邮箱注册</span></h2>
+		<form id="fphone">
+			<input id="a" type="text" name="userid" placeholder="请输入用户名"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '请输入用户名',this.color = 'red';}"
+			maxlength="16" minlength="3" autocomplete="off">
+			
+			<input type="tel" name="usrtel" placeholder="请输入手机号"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '请输入手机号';}"
+			maxlength="11" minlength="11" autocomplete="off">
+			
+			<input type="text" name="yzm" value="" placeholder="手机验证码" style="width:100px;" autocomplete="off"/>
+			<input type="button" value="获取手机验证码" id="btn" style="background:#378D29;border:1px solid #378D29;" />
+			<input type="password" name="psw" value="" placeholder="请输入密码" autocomplete="off">
+			<input type="button" class="register" value="注册">
+		</form>
+
+		<form id="femail" style="display:none">
+			<input type="text" name="userid" value="" placeholder="请输入用户名" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '请输入用户名';}" autocomplete="off"/>
+			<input type="email" name="email" value="" placeholder="请输入qq邮箱" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '请输入qq邮箱';}" autocomplete="off"/>
+			<input type="text" name="yzm" value="" placeholder="邮箱验证码" style="width:100px;" autocomplete="off" />
+			<input type="button" value="获取邮箱验证码" id="btn1" style="background:#378D29;border:1px solid #378D29;" />
+			<input type="password" name="psw" value="" placeholder="请输入密码" autocomplete="off" />
+			<input type="button" class="register" value="注册">
+		</form>
+	</div>
+	<div class="clear"></div>
+</div>
+<div class="footer">
+	<p>欢迎来到（登录,注册）</p>
+</div>
+
+</body>
+ <!-- 登录注册切换 -->
+<script>
+	
+	
+</script>
+<!-- 获取验证码 -->
+<script type="text/javascript">
+	//登录
+	$('#login .sign-in').on('click',function(){
+        $.ajax({
+                "type":"post",
+                "url":"/index/User/dologin",
+                "dataType":"json",
+                "data":{
+                "user":$("#login input[name=userid]").val(),
+                "passwd":$('#login input[name=passwd]').val()
+                },
+                "success":function(data){
+                	if(data == 0){
+                		alert('账号或密码不正确');
+                	}else if(data == 1){
+                		window.location.href="/index/index/index";
+                	}else if(data == 2){
+                		alert('账号或密码不正确');
+                	}
+                }
+              });
+    });
+	
+</script>
+</html>
