@@ -290,6 +290,7 @@
 									<p>钱包:<span style="color:red;">{$user.u_money}</span></p>
 									<button type="button" class="btn btn-lg btn-success" style="font-size:10px;" onclick="cong()">充值</button>
 									<div class="testimonial-sign">-个人信息</div>
+
 								</div>
 								<div class="clearfix"></div>
 						</div>
@@ -416,22 +417,90 @@
 <script type="text/javascript">
 function cong()
 {
-	
+	layer.open({
+		  type: 1,
+		  title:'充值',
+		  skin: 'layui-layer-rim', //样式类名
+		  area: ['200px', '170px'], //宽高
+		  closeBtn: 0, //不显示关闭按钮
+		  anim: 2,
+		  shadeClose: true, //开启遮罩关闭
+		  content:"<textarea id='money'></textarea>",
+		  btn: ['确定','取消'],
+		  yes:function(index,layero){
+				$.ajax({
+					"type":"post",
+			        "url":"/index/Index/addMoney",
+			        "dataType":"json",
+			        "data":{"money":layero.find('#money').val()},
+			        success:function(data){
+			        	if(data == 1){
+			        		layer.msg('充值成功！',{icon:1,time:1000},function () {
+				    			window.location.reload();
+				    		});
+			        	}	
+		        	}
+				})
+		  }
+	});
+		
 };
 	$('#xingxi').on('click' , function(){
 		
 		$.ajax({
-    			
+    			"type":"post",
+            	"url":"/index/Index/userInfo",
+           		"dataType":"json",
+           		"async":true,
+            	"data":{
+            	"realyname":$("p input[name=realyname]").val(),
+            	"tel":$("p input[name=tel]").val(),
+            	"email":$("p input[name=email]").val(),
+            	"usersfz":$("p input[name=usersfz]").val(),
+                },
+           		"success":check
     	});
 	});
 	function check(data){
-		
+		if(data == 1){
+			alert('姓名不能为空');
+		}else if(data ===2){
+			alert('手机号或邮箱或身份证不能为空');
+		}else if(data ==3){
+			alert('格式不正确');
+		}else if(data ==4){
+			window.location.href="/index/index/index";
+		}
     };
 
 </script>
 <script>  
     $(function(){  
-        
+        var wsServer = 'ws://xxxx:xxxx';  
+        var ws = new WebSocket(wsServer);  
+        //alert("22");  
+        ws.onopen = function(e){  
+            //alert("连接成功");  
+        }  
+        ws.onclose = function(e){  
+            alert("连接关闭");  
+        }  
+        ws.onerror = function (e) {  
+            //alert("连接错误");  
+        }  
+        ws.onmessage = function (evt) {  
+            //alert(evt);  
+            //alert("22");  
+            var data=JSON.parse(evt.data);  
+            alert(data.message);  
+            //var message=JSON.stringify(evt.data);  
+            //alert(message);  
+            //发送字符串，服务器端只需要unmask就可以了，如果是json串，后端就要json_decode  
+        };  
+        $(":button").click(function(){  
+            var message=$("#message").val();  
+            console.log(ws.send(message));  
+        })  
     })  
 </script>
 </html>
