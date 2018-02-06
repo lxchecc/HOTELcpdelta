@@ -25,7 +25,7 @@
 <link rel="stylesheet" href="/index/css/flexslider.css" type="text/css" media="screen" />
 <link href='http://fonts.googleapis.com/css?family=Nunito:400,700,300' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800italic,800,700italic,700,600italic,600,400italic,300italic,300' rel='stylesheet' type='text/css'>
-<!---strat-date-piker-->
+<!---strat-date-piker---->
 </head>
 <body>
 	<div class="banner">
@@ -45,7 +45,7 @@
 							<span class="icon-bar"></span>
 						  </button>
 						  <div class="navbar-brand logo">
-								<h1><a href="index.html"><span></span> </a></h1>
+								<h1><a href="index.html"><span></span></a></h1>
 							</div>
 						</div>
 						<!-- Collect the nav links, forms, and other content for toggling -->
@@ -121,8 +121,9 @@
 						</tr>
 					  </thead>
 					  <tbody>
-						 {foreach $che as $val}
-					  	{if $val.status == 0}
+
+					  {foreach $che as $val}
+					  {if $val.status == 0}
 						<tr>
 						  <th scope="row">{$val.mid}</th>
 						  <td>{$val.m_name}</td>
@@ -133,9 +134,6 @@
 						</tr>
 						{/if}
 						{/foreach}
-						{foreach }
-
-					
 					  </tbody>
 					</table>
 				</div>
@@ -160,7 +158,20 @@
 						</tr>
 					  </thead>
 					  <tbody>
-					  
+					  	{foreach $ord as $value}
+					  	{if $value.o_state == 2}
+						<tr>
+						  <th scope="row">{$value.roomid}</th>
+						  <td>{$value.roomtype}</td>
+						  <td><img width="30px" height="30px" src="{$value.r_picture}"/></td>
+						  <td style="color:red">￥{$value.o_money}</td>
+						  <td><?php echo date('Y-m-d' , $value['ru_time']) ?></td>
+						  <td><?php echo date('Y-m-d' , $value['tui_time']) ?></td>
+						  <td><button type="button" class="btn btn-lg btn-success" style="font-size:12px" onclick="addroom({$value.oid})">点击付款</button></td>
+						  <td><button type="button" class="btn btn-lg btn-danger" style="font-size:12px" onclick="yichu({$value.oid})">取消订单</button></td>
+						</tr>
+						{/if}
+						{/foreach}
 					  </tbody>
 					</table>
 					
@@ -187,7 +198,20 @@
 						</tr>
 					  </thead>
 					  <tbody>
-					
+					  	{foreach $sum as $value}
+					  	{if $value.y_status == 0}
+						<tr>
+						  <th scope="row">{$value.c_seat}</th>
+						  <td>{$value.c_type}</td>
+						  <td><img width="30px" height="30px" src="{$value.c_picture}"/></td>
+						  <td style="color:red">￥{$value.y_money}</td>
+						  <td><?php echo date('Y-m-d' , $value['ru_time']) ?></td>
+						  <td><?php echo date('Y-m-d' , $value['tui_time']) ?></td>
+						  <td><button type="button" class="btn btn-lg btn-success" style="font-size:12px" onclick="addrest({$value.yid})">点击付款</button></td>
+						  <td><button type="button" class="btn btn-lg btn-danger" style="font-size:12px" onclick="yichu({$value.yid})">取消订单</button></td>
+						</tr>
+						{/if}
+						{/foreach}
 					  </tbody>
 					</table>
 					
@@ -211,7 +235,26 @@
 						</tr>
 					  </thead>
 					  <tbody>
-					
+						{foreach $che as $val}
+						{if $val.status == 1}
+						<tr>
+						  <th scope="row">{$val.mid}</th>
+						  <td>{$val.m_name}</td>
+						  <td><img width="30px" height="30px" src="{$val.m_picture}"></td>
+						  <td style="color:red">￥{$val.m_money}</td>
+						  <td><button type="button" class="btn btn-lg btn-success" style="font-size:12px">付款成功</button></td>
+						  {if $val.m_refund == 0}
+						  <td><button type="button" class="btn btn-lg btn-danger" style="font-size:12px" onclick="refund({$val.mcid})">申请退款</button></td>
+						  {elseif($val.m_refund == 1)}
+						  <td><button type="button" class="btn btn-lg btn-warning" style="font-size:12px">等待审核</button></td>
+						  {elseif($val.m_refund == 2)}
+						  <td><button type="button" class="btn btn-lg btn-info" style="font-size:12px">审核通过</button></td>
+						  {elseif($val.m_refund == 3)}
+						  <td><button type="button" class="btn btn-lg btn-danger" style="font-size:12px">审核未通过</button></td>
+						  {/if}
+						</tr>
+						{/if}
+						{/foreach}
 					  </tbody>
 
 					</table>
@@ -237,7 +280,28 @@
 						</tr>
 					  </thead>
 					  <tbody>
-					  
+					  	{foreach $ord as $value}
+					  	{if $value.o_state == 1}
+						<tr>
+						  <th scope="row">{$value.roomid}</th>
+						  <td>{$value.roomtype}</td>
+						  <td><img width="30px" height="30px" src="{$value.r_picture}"/></td>
+						  <td style="color:red">￥{$value.o_money}</td>
+						  <td><?php echo date('Y-m-d' , $value['ru_time']) ?></td>
+						  <td><?php echo date('Y-m-d' , $value['tui_time']) ?></td>
+						  <td><button type="button" class="btn btn-lg btn-success" style="font-size:12px">付款成功</button></td>
+						  {if $value.o_refund == 0}
+						  <td><button type="button" class="btn btn-lg btn-danger" style="font-size:12px" onclick="refund({$value.oid})">申请退款</button></td>
+						  {elseif($value.o_refund == 1)}
+						  <td><button type="button" class="btn btn-lg btn-warning" style="font-size:12px">等待审核</button></td>
+						  {elseif($value.o_refund == 2)}
+						  <td><button type="button" class="btn btn-lg btn-info" style="font-size:12px">审核通过</button></td>
+						  {elseif($value.o_refund == 3)}
+						  <td><button type="button" class="btn btn-lg btn-danger" style="font-size:12px">审核未通过</button></td>
+						  {/if}
+						</tr>
+						{/if}
+						{/foreach}
 					  </tbody>
 					</table>	
 				</div>
@@ -263,7 +327,28 @@
 						</tr>
 					  </thead>
 					  <tbody>
-					  
+					  	{foreach $sum as $value}
+					  	{if $value.y_status == 1}
+						<tr>
+						  <th scope="row">{$value.c_seat}</th>
+						  <td>{$value.c_type}</td>
+						  <td><img width="30px" height="30px" src="{$value.c_picture}"/></td>
+						  <td style="color:red">￥{$value.y_money}</td>
+						  <td><?php echo date('Y-m-d' , $value['ru_time']) ?></td>
+						  <td><?php echo date('Y-m-d' , $value['tui_time']) ?></td>
+						  <td><button type="button" class="btn btn-lg btn-success" style="font-size:12px">付款成功</button></td>
+						  {if $value.y_refund == 0}
+						  <td><button type="button" class="btn btn-lg btn-danger" style="font-size:12px" onclick="refund({$value.yid})">申请退款</button></td>
+						  {elseif($value.y_refund == 1)}
+						  <td><button type="button" class="btn btn-lg btn-warning" style="font-size:12px">等待审核</button></td>
+						  {elseif($value.y_refund == 2)}
+						  <td><button type="button" class="btn btn-lg btn-info" style="font-size:12px">审核通过</button></td>
+						  {elseif($value.y_refund == 3)}
+						  <td><button type="button" class="btn btn-lg btn-danger" style="font-size:12px">审核未通过</button></td>
+						  {/if}
+						</tr>
+						{/if}
+						{/foreach}
 					  </tbody>
 					</table>	
 				</div>
@@ -308,10 +393,10 @@
 						</ul>
 					</div>
 					<div class="col-md-3 footer-grid">
-						<h4></h4>
+						<h4> </h4>
 						<ul>
 							<li></li>
-							<li>/li>
+							<li></li>
 							<li></li>
 							<li></li>
 						</ul>
@@ -338,38 +423,216 @@
 
 </body>
 <script type="text/javascript">
-
+var $more = $(".grid1 button:gt(1)");
+$more.hide();
+$('#more').click(function(){
+	if ($more.is(":visible")) {
+		$('#more').html("显示更多");
+		$more.hide(1000);
+	} else {
+		$('#more').html("隐藏更多");
+		$more.show(1000);
+	}
+	
+	return false;
+});
 
 
 function yichu(id)
 {
-	
+	$.ajax({
+		"type":"post",
+        "url":"/index/Destine/delCai",
+        "dataType":"json",
+        "data":{"mcid":id,'oid':id,'yid':id},
+        "success":function(data){
+        	
+        }
+	});
+
+	layer.open({
+		content:'移除成功',
+		time: 5000, //20s后自动关闭
+		btn: ['确定'],
+		yes: function(index,layero){
+			window.location.href="/index/Destine/destine";
+		}
+	});
 		
 };
 function addCai(id)
 {
-	
+	layer.open({
+	  type: 1,
+	  title:'价格',
+	  skin: 'layui-layer-rim', //样式类名
+	  area: ['200px', '170px'], //宽高
+	  closeBtn: 0, //不显示关闭按钮
+	  anim: 2,
+	  shadeClose: true, //开启遮罩关闭
+	  content:"<textarea id='money'></textarea>",
+	  btn: ['确定','取消'],
+	  yes:function(index,layero){
+			$.ajax({
+				"type":"post",
+		        "url":"/index/Destine/addCai",
+		        "dataType":"json",
+		        "data":{"mcid":id,"money":layero.find('#money').val()},
+		        "success":function(data){
+	        		if(data == 1){
+	        			layer.msg('您没有入住,请先入住！',{icon:2,time:1000},function () {
+						    // window.location.reload();
+						});
+	        		}else if(data == 2){
+	        			layer.msg('支付成功！',{icon:1,time:1000},function () {
+						    window.location.reload();
+						});
+	        		}else if(data == 3){
+	        			layer.msg('价格与实际价格不符！',{icon:3,time:1000},function () {
+						 	
+						});
+	        		}else if(data == 4){
+	        			layer.msg('您的余额不足！',{icon:3,time:1000},function () {
+						 	
+						});
+	        		}
+	        	}
+			});
+	  }
+	});
 		
 };
 function addroom(id)
 {
-	
+	layer.open({
+	  type: 1,
+	  title:'价格',
+	  skin: 'layui-layer-rim', //样式类名
+	  area: ['200px', '170px'], //宽高
+	  closeBtn: 0, //不显示关闭按钮
+	  anim: 2,
+	  shadeClose: true, //开启遮罩关闭
+	  content:"<textarea id='money'></textarea>",
+	  btn: ['确定','取消'],
+	  yes:function(index,layero){
+			$.ajax({
+				"type":"post",
+		        "url":"/index/Destine/addroom",
+		        "dataType":"json",
+		        "data":{"oid":id,"money":layero.find('#money').val()},
+		        "success":function(data){
+	        		if(data == 1){
+	        			layer.msg('您没有入住,请先入住！',{icon:2,time:1000},function () {
+						    window.location.reload();
+						});
+	        		}else if(data == 2){
+	        			layer.msg('支付成功！',{icon:1,time:1000},function () {
+						    window.location.reload();
+						});
+	        		}else if(data == 3){
+	        			layer.msg('价格与实际价格不符！',{icon:3,time:1000},function () {
+						 	
+						});
+	        		}else if(data == 4){
+	        			layer.msg('您的余额不足！',{icon:3,time:1000},function () {
+						 	
+						});
+	        		}
+	        	}
+			});
+	  }
+	});
 		
 };
 function addrest(id)
 {
-	
+	layer.open({
+	  type: 1,
+	  title:'价格',
+	  skin: 'layui-layer-rim', //样式类名
+	  area: ['200px', '170px'], //宽高
+	  closeBtn: 0, //不显示关闭按钮
+	  anim: 2,
+	  shadeClose: true, //开启遮罩关闭
+	  content:"<textarea id='money'></textarea>",
+	  btn: ['确定','取消'],
+	  yes:function(index,layero){
+			$.ajax({
+				"type":"post",
+		        "url":"/index/Destine/addrest",
+		        "dataType":"json",
+		        "data":{"yid":id,"money":layero.find('#money').val()},
+		        "success":function(data){
+	        		if(data == 1){
+	        			layer.msg('支付成功！',{icon:1,time:1000},function () {
+						    window.location.reload();
+						});
+	        		}else if(data == 2){
+	        			layer.msg('价格与实际价格不符！',{icon:3,time:1000},function () { 	
+						});
+	        		}else if(data == 4){
+	        			layer.msg('您的余额不足！',{icon:3,time:1000},function () { 	
+						});
+	        		}
+	        	}
+			});
+	  }
+	});
 		
 };
 
 function zong()
 {
-	
+	layer.open({
+	  type: 1,
+	  title:'价格',
+	  skin: 'layui-layer-rim', //样式类名
+	  area: ['200px', '170px'], //宽高
+	  closeBtn: 0, //不显示关闭按钮
+	  anim: 2,
+	  shadeClose: true, //开启遮罩关闭
+	  content:"<textarea id='money'></textarea>",
+	  btn: ['确定','取消'],
+	  yes:function(index,layero){
+			$.ajax({
+				"type":"post",
+		        "url":"/index/Destine/zong",
+		        "dataType":"json",
+		        "data":{"money":layero.find('#money').val()},
+		        "success":function(data){
+	        		if(data == 1){
+	        			layer.msg('支付成功！',{icon:1,time:1000},function () {
+						    window.location.reload();
+						});
+	        		}else if(data == 2){
+	        			layer.msg('价格与实际价格不符！',{icon:3,time:1000},function () { 	
+						});	
+	        		}else if(data == 4){
+	        			layer.msg('您的余额不足！',{icon:3,time:1000},function () { 	
+						});
+	        		}
+	        	}
+			});
+	  }
+	});
+		
 };
 
 function refund(id)
 {
-	
-};
+	$.ajax({
+		"type":"post",
+        "url":"/index/Destine/refund",
+        "dataType":"json",
+        "data":{"yid":id,'oid':id,"mcid":id},
+        "success":function(data){
+    		if(data == 1){
+    			layer.msg('申请成功！',{icon:1,time:1000},function () {
+				    window.location.reload();
+				});
+    		}
+    	}
+	});
+}
 </script>
 </html>
