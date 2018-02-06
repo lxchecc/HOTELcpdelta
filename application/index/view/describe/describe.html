@@ -43,7 +43,7 @@
 							<span class="icon-bar"></span>
 						  </button>
 						  <div class="navbar-brand logo">
-								<h1><a href="index.html"><span>Best  </span> Hotel</a></h1>
+								<h1><a href="index.html"><span> </span></a></h1>
 							</div>
 						</div>
 						<!-- Collect the nav links, forms, and other content for toggling -->
@@ -392,6 +392,22 @@
 		</div>
 		<a href="/index/Gallery/gallery" class="lb-close">关闭</a>
 	</div>
+	<div class="lb-overlay" id="image-9">
+		<img src="/index/images/ga9.jpg" alt="image1" />
+		<div class="gal-info">							
+			<h3>精彩图片</h3>
+				<p>酒店高端房间实拍</p>
+		</div>
+		<a href="/index/Gallery/gallery" class="lb-close">关闭</a>
+	</div>
+	<div class="lb-overlay" id="image-10">
+		<img src="/index/images/ga10.jpg" alt="image1" />
+		<div class="gal-info">							
+			<h3>精彩图片</h3>
+				<p>酒店高端房间实拍</p>
+		</div>
+		<a href="/index/Gallery/gallery" class="lb-close">关闭</a>
+	</div>
 
 			
 		</div>
@@ -455,4 +471,24 @@
 	<!--footer-->
 
 </body>
+<!-- <script type="text/javascript">
+	window.onload = window.onscroll = function () {
+		var aImage = document.getElementsByTagName('img');
+		/*console.log(aImage);*/
+		//获取可视区域的高度
+		var height = document.body.clientHeight;
+		/*console.log(height);*/
+		//得到卷起的高度
+		var scrollTop = document.body.scrollTop;
+		console.log(scrollTop);
+		console.log(aImage[1].offsetTop);
+		for (var i = 0; i < aImage.length; i++) {
+			var top = aImage[i].offsetTop;
+			if (top <= height + scrollTop) {
+				aImage[i].src = aImage[i].getAttribute('_src');
+			}
+		}
+	};
+//瀑布流
+</script> -->
 </html>

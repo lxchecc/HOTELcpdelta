@@ -185,30 +185,30 @@
 						</ul>
 					</div>
 					<div class="col-md-3 footer-grid">
-						<h4>Site Links</h4>
+						<h4></h4>
 						<ul>
-							<li>Our Story</li>
-							<li>Sleep Program</li>
-							<li>Executive Travel Program</li>
-							<li>Enriched Wellness</li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
 						</ul>
 					</div>
 					<div class="col-md-3 footer-grid">
-						<h4>Our Rooms</h4>
+						<h4></h4>
 						<ul>
-							<li>Superior Room</li>
-							<li>Deluxe Room</li>
-							<li>Business Room</li>
-							<li>Executive Corner Room</li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
 						</ul>
 					</div>
 					<div class="col-md-3 footer-grid">
-						<h4>Our Services </h4>
+						<h4></h4>
 						<ul>
-							<li>Room services</li>
-							<li>Free internet Wifi</li>
-							<li>Television (50 channels)</li>
-							<li>Pets allowed</li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
 						</ul>
 					</div>
 					<div class="clearfix"></div>
@@ -245,7 +245,7 @@ $('#type').change(function(){
 		success:function(data){
 			var obj = JSON.parse(data);
 			for(var i=0;i<obj.length;i++){
-				$('#roomnum').append("<option value='"+obj[i].c_seat+"'>"+obj[i].c_seat+"</option>");
+			$('#roomnum').append("<option value='"+obj[i].c_seat+"'>"+obj[i].c_seat+"</option>");
 			}
 			$('#money input').attr('value',obj[0].cprice);
 		}
@@ -267,7 +267,7 @@ $('.best-hot').on('click',function(){
 		"data":{
 			"ru":$("#ru input").val(),
 			"tui":$("#tui input").val(),
-			"money":$('#mpney input[name=money]').val(),
+			"money":$('#money input[name=money]').val(),
 			"c_type":$("#type option:selected").val(),
 			"c_seat":$('#roomnum option:selected').val()
 		},

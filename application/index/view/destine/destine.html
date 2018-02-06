@@ -25,7 +25,7 @@
 <link rel="stylesheet" href="/index/css/flexslider.css" type="text/css" media="screen" />
 <link href='http://fonts.googleapis.com/css?family=Nunito:400,700,300' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800italic,800,700italic,700,600italic,600,400italic,300italic,300' rel='stylesheet' type='text/css'>
-<!---strat-date-piker---->
+<!---strat-date-piker-->
 </head>
 <body>
 	<div class="banner">
@@ -45,7 +45,7 @@
 							<span class="icon-bar"></span>
 						  </button>
 						  <div class="navbar-brand logo">
-								<h1><a href="index.html"><span>Best  </span> Hotel</a></h1>
+								<h1><a href="index.html"><span></span> </a></h1>
 							</div>
 						</div>
 						<!-- Collect the nav links, forms, and other content for toggling -->
@@ -83,7 +83,7 @@
 					<a name="four">
 					<a name="five">
 					<a name="six">
-					<h2 class="tittle">My choice</h2>
+					<h2 class="tittle">我的预定</h2>
 				</div>
 				<!--button-->
 				<div class="grid_3 grid_4">
@@ -121,6 +121,19 @@
 						</tr>
 					  </thead>
 					  <tbody>
+						 {foreach $che as $val}
+					  	{if $val.status == 0}
+						<tr>
+						  <th scope="row">{$val.mid}</th>
+						  <td>{$val.m_name}</td>
+						  <td><img width="30px" height="30px" src="{$val.m_picture}"></td>
+						  <td style="color:red">￥{$val.m_money}</td>
+						  <td><button type="button" class="btn btn-lg btn-success" style="font-size:12px" onclick="addCai({$val.mcid})">点击付款</button></td>
+						  <td><button type="button" class="btn btn-lg btn-danger" style="font-size:12px" onclick="yichu({$val.mcid})">移除菜单</button></td>
+						</tr>
+						{/if}
+						{/foreach}
+						{foreach }
 
 					
 					  </tbody>
@@ -277,30 +290,30 @@
 						</ul>
 					</div>
 					<div class="col-md-3 footer-grid">
-						<h4>Hotel top links</h4>
+						<h4></h4>
 						<ul>
-							<li>Our Story</li>
-							<li>Sleep Program</li>
-							<li>Executive Travel Program</li>
-							<li>Enriched Wellness</li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
 						</ul>
 					</div>
 					<div class="col-md-3 footer-grid">
-						<h4>Our Rooms</h4>
+						<h4></h4>
 						<ul>
-							<li>Superior Room</li>
-							<li>Deluxe Room</li>
-							<li>Business Room</li>
-							<li>Executive Corner Room</li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
 						</ul>
 					</div>
 					<div class="col-md-3 footer-grid">
-						<h4>Our Services </h4>
+						<h4></h4>
 						<ul>
-							<li>Room services</li>
-							<li>Free internet Wifi</li>
-							<li>Television (50 channels)</li>
-							<li>Pets allowed</li>
+							<li></li>
+							<li>/li>
+							<li></li>
+							<li></li>
 						</ul>
 					</div>
 					<div class="clearfix"></div>
