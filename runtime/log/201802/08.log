@@ -1,0 +1,589 @@
+---------------------------------------------------------------
+[ 2018-02-08T10:32:48+08:00 ] ::1 ::1 GET /index/User/login
+[ info ] www.hoteltest.cn/index/User/login [运行时间：0.095276s][吞吐率：10.50req/s] [内存消耗：2,670.95kb] [文件加载：41]
+[ info ] [ LANG ] E:\wamp64\www\git\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'User',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hoteltest.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.hoteltest.cn/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mds4pfengtko32t5aboh1uvhk6; hzy_login_back=http://www.hoteltest.cn/',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\User->login[ E:\wamp64\www\git\hotel\application\index\controller\User.php ]
+[ info ] [ VIEW ] E:\wamp64\www\git\hotel\public/../application/index\view\user\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-08T10:32:48+08:00 ] ::1 ::1 GET /index/login/images/person.png
+[ info ] www.hoteltest.cn/index/login/images/person.png [运行时间：0.064151s][吞吐率：15.59req/s] [内存消耗：2,062.84kb] [文件加载：34]
+[ info ] [ LANG ] E:\wamp64\www\git\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hoteltest.cn',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.hoteltest.cn/index/login/css/style.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mds4pfengtko32t5aboh1uvhk6; hzy_login_back=http://www.hoteltest.cn/',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-08T10:32:48+08:00 ] ::1 ::1 GET /index/login/images/phone.png
+[ info ] www.hoteltest.cn/index/login/images/phone.png [运行时间：0.066948s][吞吐率：14.94req/s] [内存消耗：2,062.84kb] [文件加载：34]
+[ info ] [ LANG ] E:\wamp64\www\git\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hoteltest.cn',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.hoteltest.cn/index/login/css/style.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mds4pfengtko32t5aboh1uvhk6; hzy_login_back=http://www.hoteltest.cn/',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-08T10:32:48+08:00 ] ::1 ::1 GET /index/login/images/lock.png
+[ info ] www.hoteltest.cn/index/login/images/lock.png [运行时间：0.085719s][吞吐率：11.67req/s] [内存消耗：2,062.84kb] [文件加载：34]
+[ info ] [ LANG ] E:\wamp64\www\git\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hoteltest.cn',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.hoteltest.cn/index/login/css/style.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mds4pfengtko32t5aboh1uvhk6; hzy_login_back=http://www.hoteltest.cn/',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-08T10:34:08+08:00 ] ::1 ::1 GET /
+[ info ] www.hoteltest.cn/ [运行时间：0.205878s][吞吐率：4.86req/s] [内存消耗：3,721.77kb] [文件加载：48]
+[ info ] [ LANG ] E:\wamp64\www\git\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hoteltest.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mds4pfengtko32t5aboh1uvhk6; hzy_login_back=http://www.hoteltest.cn/',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\wamp64\www\git\hotel\application\index\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\wamp64\www\git\hotel\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'room',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005249s ] mysql:dbname=taobao;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hotel_room` [ RunTime:0.002825s ]
+[ sql ] [ SQL ] SELECT * FROM `hotel_room` GROUP BY roomtype [ RunTime:0.000994s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hotel_user` [ RunTime:0.001239s ]
+[ sql ] [ SQL ] SELECT * FROM `hotel_user` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000385s ]
+---------------------------------------------------------------
+[ 2018-02-08T10:34:08+08:00 ] ::1 ::1 GET /index/css/font-awesome.css
+[ info ] www.hoteltest.cn/index/css/font-awesome.css [运行时间：0.052472s][吞吐率：19.06req/s] [内存消耗：2,062.70kb] [文件加载：34]
+[ info ] [ LANG ] E:\wamp64\www\git\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'css',
+    2 => 'font-awesome.css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hoteltest.cn',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www.hoteltest.cn/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mds4pfengtko32t5aboh1uvhk6; hzy_login_back=http://www.hoteltest.cn/',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-08T10:34:09+08:00 ] ::1 ::1 GET /index/images/bg_direction_nav.png
+[ info ] www.hoteltest.cn/index/images/bg_direction_nav.png [运行时间：0.046977s][吞吐率：21.29req/s] [内存消耗：2,062.91kb] [文件加载：34]
+[ info ] [ LANG ] E:\wamp64\www\git\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'images',
+    2 => 'bg_direction_nav.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hoteltest.cn',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.hoteltest.cn/index/css/flexslider.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mds4pfengtko32t5aboh1uvhk6; hzy_login_back=http://www.hoteltest.cn/',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-08T10:34:11+08:00 ] ::1 ::1 GET /index/Contact/contact.html
+[ info ] www.hoteltest.cn/index/Contact/contact.html [运行时间：0.108395s][吞吐率：9.23req/s] [内存消耗：2,633.96kb] [文件加载：41]
+[ info ] [ LANG ] E:\wamp64\www\git\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Contact',
+    2 => 'contact',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hoteltest.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.hoteltest.cn/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mds4pfengtko32t5aboh1uvhk6; hzy_login_back=http://www.hoteltest.cn/',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Contact->contact[ E:\wamp64\www\git\hotel\application\index\controller\Contact.php ]
+[ info ] [ VIEW ] E:\wamp64\www\git\hotel\public/../application/index\view\contact\contact.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-08T10:34:11+08:00 ] ::1 ::1 GET /index/css/font-awesome.min.css
+[ info ] www.hoteltest.cn/index/css/font-awesome.min.css [运行时间：0.048214s][吞吐率：20.74req/s] [内存消耗：2,062.88kb] [文件加载：34]
+[ info ] [ LANG ] E:\wamp64\www\git\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'css',
+    2 => 'font-awesome.min.css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hoteltest.cn',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www.hoteltest.cn/index/Contact/contact.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mds4pfengtko32t5aboh1uvhk6; hzy_login_back=http://www.hoteltest.cn/',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-08T10:34:16+08:00 ] ::1 ::1 GET /index/Contact/contact.html
+[ info ] www.hoteltest.cn/index/Contact/contact.html [运行时间：0.096580s][吞吐率：10.35req/s] [内存消耗：2,634.54kb] [文件加载：41]
+[ info ] [ LANG ] E:\wamp64\www\git\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Contact',
+    2 => 'contact',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hoteltest.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.hoteltest.cn/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mds4pfengtko32t5aboh1uvhk6; hzy_login_back=http://www.hoteltest.cn/',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Contact->contact[ E:\wamp64\www\git\hotel\application\index\controller\Contact.php ]
+[ info ] [ VIEW ] E:\wamp64\www\git\hotel\public/../application/index\view\contact\contact.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-08T10:34:16+08:00 ] ::1 ::1 GET /index/css/font-awesome.min.css
+[ info ] www.hoteltest.cn/index/css/font-awesome.min.css [运行时间：0.042981s][吞吐率：23.27req/s] [内存消耗：2,062.88kb] [文件加载：34]
+[ info ] [ LANG ] E:\wamp64\www\git\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'css',
+    2 => 'font-awesome.min.css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hoteltest.cn',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www.hoteltest.cn/index/Contact/contact.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mds4pfengtko32t5aboh1uvhk6; hzy_login_back=http://www.hoteltest.cn/',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-08T13:40:25+08:00 ] ::1 ::1 GET /index/Contact/contact.html
+[ info ] www.hoteltest.cn/index/Contact/contact.html [运行时间：0.108157s][吞吐率：9.25req/s] [内存消耗：2,634.54kb] [文件加载：41]
+[ info ] [ LANG ] E:\wamp64\www\git\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Contact',
+    2 => 'contact',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hoteltest.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.hoteltest.cn/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mds4pfengtko32t5aboh1uvhk6; hzy_login_back=http://www.hoteltest.cn/',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Contact->contact[ E:\wamp64\www\git\hotel\application\index\controller\Contact.php ]
+[ info ] [ VIEW ] E:\wamp64\www\git\hotel\public/../application/index\view\contact\contact.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-08T13:40:25+08:00 ] ::1 ::1 GET /index/css/font-awesome.min.css
+[ info ] www.hoteltest.cn/index/css/font-awesome.min.css [运行时间：0.049985s][吞吐率：20.01req/s] [内存消耗：2,062.88kb] [文件加载：34]
+[ info ] [ LANG ] E:\wamp64\www\git\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'css',
+    2 => 'font-awesome.min.css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hoteltest.cn',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www.hoteltest.cn/index/Contact/contact.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mds4pfengtko32t5aboh1uvhk6; hzy_login_back=http://www.hoteltest.cn/',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-08T13:48:18+08:00 ] ::1 ::1 GET /index/Contact/contact.html
+[ info ] www.hoteltest.cn/index/Contact/contact.html [运行时间：0.103447s][吞吐率：9.67req/s] [内存消耗：2,634.54kb] [文件加载：41]
+[ info ] [ LANG ] E:\wamp64\www\git\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Contact',
+    2 => 'contact',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hoteltest.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.hoteltest.cn/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mds4pfengtko32t5aboh1uvhk6; hzy_login_back=http://www.hoteltest.cn/',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Contact->contact[ E:\wamp64\www\git\hotel\application\index\controller\Contact.php ]
+[ info ] [ VIEW ] E:\wamp64\www\git\hotel\public/../application/index\view\contact\contact.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-08T13:48:18+08:00 ] ::1 ::1 GET /index/css/font-awesome.min.css
+[ info ] www.hoteltest.cn/index/css/font-awesome.min.css [运行时间：0.050126s][吞吐率：19.95req/s] [内存消耗：2,062.88kb] [文件加载：34]
+[ info ] [ LANG ] E:\wamp64\www\git\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'css',
+    2 => 'font-awesome.min.css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hoteltest.cn',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www.hoteltest.cn/index/Contact/contact.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mds4pfengtko32t5aboh1uvhk6; hzy_login_back=http://www.hoteltest.cn/',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-08T13:48:32+08:00 ] ::1 ::1 GET /index/Contact/contact.html
+[ info ] www.hoteltest.cn/index/Contact/contact.html [运行时间：0.106772s][吞吐率：9.37req/s] [内存消耗：2,634.54kb] [文件加载：41]
+[ info ] [ LANG ] E:\wamp64\www\git\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Contact',
+    2 => 'contact',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hoteltest.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.hoteltest.cn/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mds4pfengtko32t5aboh1uvhk6; hzy_login_back=http://www.hoteltest.cn/',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Contact->contact[ E:\wamp64\www\git\hotel\application\index\controller\Contact.php ]
+[ info ] [ VIEW ] E:\wamp64\www\git\hotel\public/../application/index\view\contact\contact.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-08T13:48:32+08:00 ] ::1 ::1 GET /index/css/font-awesome.min.css
+[ info ] www.hoteltest.cn/index/css/font-awesome.min.css [运行时间：0.051535s][吞吐率：19.40req/s] [内存消耗：2,062.88kb] [文件加载：34]
+[ info ] [ LANG ] E:\wamp64\www\git\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'css',
+    2 => 'font-awesome.min.css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hoteltest.cn',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www.hoteltest.cn/index/Contact/contact.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mds4pfengtko32t5aboh1uvhk6; hzy_login_back=http://www.hoteltest.cn/',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-08T13:48:34+08:00 ] ::1 ::1 GET /index/Contact/contact.html
+[ info ] www.hoteltest.cn/index/Contact/contact.html [运行时间：0.060852s][吞吐率：16.43req/s] [内存消耗：2,444.28kb] [文件加载：39]
+[ info ] [ LANG ] E:\wamp64\www\git\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Contact',
+    2 => 'contact',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hoteltest.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.hoteltest.cn/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mds4pfengtko32t5aboh1uvhk6; hzy_login_back=http://www.hoteltest.cn/',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Contact->contact[ E:\wamp64\www\git\hotel\application\index\controller\Contact.php ]
+[ info ] [ VIEW ] E:\wamp64\www\git\hotel\public/../application/index\view\contact\contact.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-08T13:48:34+08:00 ] ::1 ::1 GET /index/css/font-awesome.min.css
+[ info ] www.hoteltest.cn/index/css/font-awesome.min.css [运行时间：0.048553s][吞吐率：20.60req/s] [内存消耗：2,062.88kb] [文件加载：34]
+[ info ] [ LANG ] E:\wamp64\www\git\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'css',
+    2 => 'font-awesome.min.css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hoteltest.cn',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www.hoteltest.cn/index/Contact/contact.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mds4pfengtko32t5aboh1uvhk6; hzy_login_back=http://www.hoteltest.cn/',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File

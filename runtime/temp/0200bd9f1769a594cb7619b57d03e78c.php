@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:77:"E:\wamp64\www\git\hotel\public/../application/index\view\contact\contact.html";i:1518068911;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -61,11 +62,11 @@
 								<li><a data-hover="Rooms" href="/index/Rooms/rooms">房间</a></li>
 								<li><a  href="/index/Destine/destine" data-hover="codes">预定</a></li>
 								<li><a data-hover="Contact" href="/index/Contact/contact.html">留言</a></li>
-								{if empty($Think.session.username)}
+								<?php if(empty(\think\Session::get('username'))): ?>
 								<li><a href="/index/User/login">登录/注册</a></li>
-								{else}
+								<?php else: ?>
 								<li><a href="/index/User/loginOut">注销</a></li>
-								{/if}
+								<?php endif; ?>
 						  </ul>
 						</div><!-- /.navbar-collapse -->
 					</div><!-- /.container-fluid -->
