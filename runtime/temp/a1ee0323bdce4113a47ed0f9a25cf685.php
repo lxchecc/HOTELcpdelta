@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:71:"E:\wamp64\www\git\hotel\public/../application/index\view\meal\meal.html";i:1518168495;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -72,11 +73,10 @@
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav">
 							
-							{if empty($Think.session.username)}
-							{else}
-							<li><a href="/index/User/userInfo">尊敬的用户 {$Think.session.username}</a></li>
+							<?php if(empty(\think\Session::get('username'))): else: ?>
+							<li><a href="/index/User/userInfo">尊敬的用户 <?php echo \think\Session::get('username'); ?></a></li>
 
-							{/if}
+							<?php endif; ?>
 							<li class="active"><a href="/index/index/index" data-hover="Home">首页</a></li>
 							<li><a href="/index/Meal/meal" data-hover="About">房间餐</a></li>
 							<li><a data-hover="Restaurant" href="/index/Restaurant/restaurant">餐厅</a></li>
@@ -84,12 +84,12 @@
 							<li><a data-hover="Rooms" href="/index/Rooms/rooms">房间</a></li>
 							<li><a  href="/index/Destine/destine" data-hover="codes">预定</a></li>
 							<li><a data-hover="Contact" href="/index/Contact/contact.html">留言</a></li>
-							{if empty($Think.session.username)}
+							<?php if(empty(\think\Session::get('username'))): ?>
 							<li><a href="/index/User/login">登录/注册</a></li>
-							{else}
+							<?php else: ?>
 
 							<li><a href="/index/User/loginOut">退出</a></li>
-							{/if}
+							<?php endif; ?>
 						  </ul>
 						</div><!-- /.navbar-collapse -->
 					</div><!-- /.container-fluid -->
@@ -169,31 +169,31 @@
 	<div class="team">
 		<div class="container">
 			<h3 class="tittle">精美房间餐</h3>
-			{foreach $list as $val}
+			<?php foreach($list as $val): ?>
 			<div class="team-row" style="margin-left:50px;">
 				<div class="col-md-3 team-grids wow fadeInUp animated" data-wow-delay=".5s" style="margin:10px 10px;">
-					<h5>{$val.m_name}</h5>
-					<p style="width:200xp;height:50px;">{$val.m_content}</p>
+					<h5><?php echo $val['m_name']; ?></h5>
+					<p style="width:200xp;height:50px;"><?php echo $val['m_content']; ?></p>
 					<div class="social-icons">
-						{if !empty($Think.session.username)}
-						<input type="hidden" name="mid" value="{$val:mid}">
-						<span class="label label-danger" style="font-size:20px;">￥{$val.m_money}</span>
-						<button type="button" class="btn btn-lg btn-success" id="" onclick="caidan({$val.mid})">加入菜单</button>
-						{else}
+						<?php if(!empty(\think\Session::get('username'))): ?>
+						<input type="hidden" name="mid" value="<?php echo $val->mid; ?>">
+						<span class="label label-danger" style="font-size:20px;">￥<?php echo $val['m_money']; ?></span>
+						<button type="button" class="btn btn-lg btn-success" id="" onclick="caidan(<?php echo $val['mid']; ?>)">加入菜单</button>
+						<?php else: ?>
 						<button type="button" class="btn btn-lg btn-success"><a href="/index/User/login">点我登录</a></button>
-						{/if}
+						<?php endif; ?>
 					</div>
 					<div class="team-img">
-						<img width="200" height="300" src="{$val.m_picture}" alt="">
+						<img width="200" height="300" src="<?php echo $val['m_picture']; ?>" alt="">
 					</div>
 				</div>
 				<!-- <div class="clearfix"> </div> -->
 			</div>
-			{/foreach}
+			<?php endforeach; ?>
 	<!--//team-->		
 
 		</div>
-		<div style="text-align:center;">{$list}</div>
+		<div style="text-align:center;"><?php echo $list; ?></div>
 
 		<div class="footer-section">
 			<div class="container">

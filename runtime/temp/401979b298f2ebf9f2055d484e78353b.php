@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"E:\wamp64\www\git\hotel\public/../application/index\view\index\index.html";i:1518056696;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"E:\wamp64\www\git\hotel\public/../application/index\view\index\index.html";i:1518163389;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -128,8 +128,15 @@
 						</div>
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-						  <ul class="nav navbar-nav">
 
+
+
+						  <ul class="nav navbar-nav">
+							
+							<?php if(empty(\think\Session::get('username'))): else: ?>
+							<li><a href="/index/User/userInfo">尊敬的用户 <?php echo $user['username']; ?></a></li>
+
+							<?php endif; ?>
 							<li class="active"><a href="/index/index/index" data-hover="Home">首页</a></li>
 							<li><a href="/index/Meal/meal" data-hover="About">房间餐</a></li>
 							<li><a data-hover="Restaurant" href="/index/Restaurant/restaurant">餐厅</a></li>
@@ -140,7 +147,8 @@
 							<?php if(empty(\think\Session::get('username'))): ?>
 							<li><a href="/index/User/login">登录/注册</a></li>
 							<?php else: ?>
-							<li><a href="/index/User/loginOut">注销</a></li>
+
+							<li><a href="/index/User/loginOut">退出</a></li>
 							<?php endif; ?>
 						  </ul>
 						</div><!-- /.navbar-collapse -->
@@ -185,7 +193,7 @@
 			<!--welcome-->
 			<div class="resort-section">
 				<div class="container">
-					<h3 class="tittle">提别推荐<span></span></h3>
+					<h3 class="tittle">特别推荐<span></span></h3>
 					<div class="resort-grids">
 				<!-- start content_slider -->
 						<div id="owl-demo" class="owl-carousel">

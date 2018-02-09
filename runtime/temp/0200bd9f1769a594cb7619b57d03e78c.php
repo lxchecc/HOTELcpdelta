@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:77:"E:\wamp64\www\git\hotel\public/../application/index\view\contact\contact.html";i:1518068911;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:77:"E:\wamp64\www\git\hotel\public/../application/index\view\contact\contact.html";i:1518168409;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -54,19 +54,25 @@
 						</div>
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-						   <ul class="nav navbar-nav">
-								<li class="active"><a href="/index/index/index" data-hover="Home">首页</a></li>
-								<li><a href="/index/Meal/meal" data-hover="About">房间餐</a></li>
-								<li><a data-hover="Restaurant" href="/index/Restaurant/restaurant">餐厅</a></li>
-								<li><a data-hover="Gallery" href="/index/Describe/describe">简介</a></li>
-								<li><a data-hover="Rooms" href="/index/Rooms/rooms">房间</a></li>
-								<li><a  href="/index/Destine/destine" data-hover="codes">预定</a></li>
-								<li><a data-hover="Contact" href="/index/Contact/contact.html">留言</a></li>
-								<?php if(empty(\think\Session::get('username'))): ?>
-								<li><a href="/index/User/login">登录/注册</a></li>
-								<?php else: ?>
-								<li><a href="/index/User/loginOut">注销</a></li>
-								<?php endif; ?>
+						  <ul class="nav navbar-nav">
+							
+							<?php if(empty(\think\Session::get('username'))): else: ?>
+							<li><a href="/index/User/userInfo">尊敬的用户 <?php echo \think\Session::get('username'); ?></a></li>
+
+							<?php endif; ?>
+							<li class="active"><a href="/index/index/index" data-hover="Home">首页</a></li>
+							<li><a href="/index/Meal/meal" data-hover="About">房间餐</a></li>
+							<li><a data-hover="Restaurant" href="/index/Restaurant/restaurant">餐厅</a></li>
+							<li><a data-hover="Gallery" href="/index/Describe/describe">简介</a></li>
+							<li><a data-hover="Rooms" href="/index/Rooms/rooms">房间</a></li>
+							<li><a  href="/index/Destine/destine" data-hover="codes">预定</a></li>
+							<li><a data-hover="Contact" href="/index/Contact/contact.html">留言</a></li>
+							<?php if(empty(\think\Session::get('username'))): ?>
+							<li><a href="/index/User/login">登录/注册</a></li>
+							<?php else: ?>
+
+							<li><a href="/index/User/loginOut">退出</a></li>
+							<?php endif; ?>
 						  </ul>
 						</div><!-- /.navbar-collapse -->
 					</div><!-- /.container-fluid -->
