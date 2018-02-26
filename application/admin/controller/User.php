@@ -7,6 +7,9 @@ use app\admin\Model\User as UserModel;
 //会员管理
 class User extends controller
 {
+
+
+
 	public function userList()
 	{
 		//修改会员状态

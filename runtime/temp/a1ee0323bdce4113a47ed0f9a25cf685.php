@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:71:"E:\wamp64\www\git\hotel\public/../application/index\view\meal\meal.html";i:1518168495;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:71:"E:\wamp64\www\git\hotel\public/../application/index\view\meal\meal.html";i:1519606027;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -242,7 +242,7 @@
 			<div class="copy-section">
 				<div class="container">
 					<div class="footer-top">
-						<p>Copyright &copy; 2016.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+						<p><a target="_blank" href="http://sc.chinaz.com/moban/"></a></p>
 					</div>
 					<div class="social-icons">
 						<a href="#"><i class="icon"></i></a>

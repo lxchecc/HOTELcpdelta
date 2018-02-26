@@ -71,6 +71,7 @@ class User extends controller
 		}
 	}
 	//注册方法
+
 	public function register()
 	{
 		//----------------------判断用户名--------------------
@@ -136,6 +137,17 @@ class User extends controller
 		$this->redirect($oauth);
 	}
 	
+	public function userinfo()
+	{
+        $uid = Session::get('uid');
+        /*$type = Room::get(['roomtype'=>1]);
+        $first = $type->roomtype;*/
+        $room = Db::name('room')->group('roomtype')->select();
+        $user = Db::name('user')->where('id',$uid)->find();
+        $this->assign('user',$user);
+        $this->assign('room',$room);
+        return $this->fetch();
+	}
 }
 
 //用户手机注册类
