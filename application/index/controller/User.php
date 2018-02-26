@@ -148,6 +148,23 @@ class User extends controller
         $this->assign('room',$room);
         return $this->fetch();
 	}
+
+	public function log3rd()
+	{
+		include 'open51094.class.php';
+
+		$open = new open51094();
+		$code = $_GET['code'];
+        $this->assign('code',$code);
+
+
+        return $this->fetch();
+	}
+
+
+	
+
+
 }
 
 //用户手机注册类

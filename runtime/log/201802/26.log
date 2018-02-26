@@ -4241,13 +4241,20 @@
 )
 [ info ] [ LOG ] INIT File
 ---------------------------------------------------------------
+<<<<<<< HEAD
 [ 2018-02-26T14:17:18+08:00 ] ::1 ::1 GET /
 [ info ] www.test.com/ [运行时间：1.159067s][吞吐率：0.86req/s] [内存消耗：2,815.66kb] [文件加载：46]
 [ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+=======
+[ 2018-02-26T10:57:24+08:00 ] ::1 ::1 GET /index/index/index
+[ info ] www.hoteltest.cn/index/index/index [运行时间：0.045300s][吞吐率：22.08req/s] [内存消耗：3,501.80kb] [文件加载：46]
+[ info ] [ LANG ] E:\wamp64\www\git\hotel\thinkphp\lang\zh-cn.php
+>>>>>>> 843ca11f1a66aa154f4c3e7094824cd75b5097c8
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => '',
     1 => NULL,
     2 => NULL,
@@ -4305,6 +4312,27 @@
 [ info ] [ PARAM ] array (
 )
 [ info ] [ RUN ] app\index\controller\Index->index[ C:\wamp\www\tp\hotel\application\index\controller\Index.php ]
+=======
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hoteltest.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.hoteltest.cn/index/index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mds4pfengtko32t5aboh1uvhk6; hzy_login_back=http://www.hoteltest.cn/',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\wamp64\www\git\hotel\application\index\controller\Index.php ]
+>>>>>>> 843ca11f1a66aa154f4c3e7094824cd75b5097c8
 [ info ] [ SESSION ] INIT array (
   'id' => '',
   'var_session_id' => '',
@@ -4313,11 +4341,16 @@
   'auto_start' => true,
 )
 [ info ] [ DB ] INIT mysql
+<<<<<<< HEAD
 [ info ] [ VIEW ] C:\wamp\www\tp\hotel\public/../application/index\view\index\index.html [ array (
+=======
+[ info ] [ VIEW ] E:\wamp64\www\git\hotel\public/../application/index\view\index\index.html [ array (
+>>>>>>> 843ca11f1a66aa154f4c3e7094824cd75b5097c8
   0 => 'user',
   1 => 'room',
 ) ]
 [ info ] [ LOG ] INIT File
+<<<<<<< HEAD
 [ sql ] [ DB ] CONNECT:[ UseTime:0.039003s ] mysql:dbname=taobao;host=localhost;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `hotel_room` [ RunTime:0.037002s ]
 [ sql ] [ SQL ] SELECT * FROM `hotel_room` GROUP BY roomtype [ RunTime:0.001000s ]
@@ -4327,6 +4360,17 @@
 [ 2018-02-26T14:23:12+08:00 ] ::1 ::1 GET /index/css/font-awesome.css
 [ info ] www.test.com/index/css/font-awesome.css [运行时间：0.039002s][吞吐率：25.64req/s] [内存消耗：1,781.47kb] [文件加载：34]
 [ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+=======
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002226s ] mysql:dbname=taobao;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hotel_room` [ RunTime:0.001581s ]
+[ sql ] [ SQL ] SELECT * FROM `hotel_room` GROUP BY roomtype [ RunTime:0.000676s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hotel_user` [ RunTime:0.000741s ]
+[ sql ] [ SQL ] SELECT * FROM `hotel_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000386s ]
+---------------------------------------------------------------
+[ 2018-02-26T10:57:25+08:00 ] ::1 ::1 GET /index/css/font-awesome.css
+[ info ] www.hoteltest.cn/index/css/font-awesome.css [运行时间：0.040361s][吞吐率：24.78req/s] [内存消耗：2,062.85kb] [文件加载：34]
+[ info ] [ LANG ] E:\wamp64\www\git\hotel\thinkphp\lang\zh-cn.php
+>>>>>>> 843ca11f1a66aa154f4c3e7094824cd75b5097c8
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
@@ -4337,6 +4381,7 @@
   ),
 )
 [ info ] [ HEADER ] array (
+<<<<<<< HEAD
   'host' => 'www.test.com',
   'connection' => 'keep-alive',
   'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
@@ -4345,14 +4390,30 @@
   'accept-encoding' => 'gzip, deflate',
   'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
   'cookie' => 'PHPSESSID=9gaavl688ke7e16dvsk1vo5eg0',
+=======
+  'host' => 'www.hoteltest.cn',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www.hoteltest.cn/index/index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mds4pfengtko32t5aboh1uvhk6; hzy_login_back=http://www.hoteltest.cn/',
+>>>>>>> 843ca11f1a66aa154f4c3e7094824cd75b5097c8
 )
 [ info ] [ PARAM ] array (
 )
 [ info ] [ LOG ] INIT File
 ---------------------------------------------------------------
+<<<<<<< HEAD
 [ 2018-02-26T14:23:12+08:00 ] ::1 ::1 GET /index/images/bg_direction_nav.png
 [ info ] www.test.com/index/images/bg_direction_nav.png [运行时间：0.043002s][吞吐率：23.25req/s] [内存消耗：1,781.84kb] [文件加载：34]
 [ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+=======
+[ 2018-02-26T10:57:25+08:00 ] ::1 ::1 GET /index/images/bg_direction_nav.png
+[ info ] www.hoteltest.cn/index/images/bg_direction_nav.png [运行时间：0.030561s][吞吐率：32.72req/s] [内存消耗：2,062.91kb] [文件加载：34]
+[ info ] [ LANG ] E:\wamp64\www\git\hotel\thinkphp\lang\zh-cn.php
+>>>>>>> 843ca11f1a66aa154f4c3e7094824cd75b5097c8
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
@@ -4363,6 +4424,7 @@
   ),
 )
 [ info ] [ HEADER ] array (
+<<<<<<< HEAD
   'host' => 'www.test.com',
   'connection' => 'keep-alive',
   'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
@@ -4479,20 +4541,37 @@
   'accept-encoding' => 'gzip, deflate',
   'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
   'cookie' => 'PHPSESSID=9gaavl688ke7e16dvsk1vo5eg0',
+=======
+  'host' => 'www.hoteltest.cn',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.hoteltest.cn/index/css/flexslider.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mds4pfengtko32t5aboh1uvhk6; hzy_login_back=http://www.hoteltest.cn/',
+>>>>>>> 843ca11f1a66aa154f4c3e7094824cd75b5097c8
 )
 [ info ] [ PARAM ] array (
 )
 [ info ] [ LOG ] INIT File
 ---------------------------------------------------------------
+<<<<<<< HEAD
 [ 2018-02-26T14:23:37+08:00 ] ::1 ::1 POST /index/User/dologin
 [ info ] www.test.com/index/User/dologin [运行时间：0.068004s][吞吐率：14.71req/s] [内存消耗：2,891.55kb] [文件加载：45]
 [ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+=======
+[ 2018-02-26T10:57:40+08:00 ] ::1 ::1 GET /index/User/userInfo
+[ info ] www.hoteltest.cn/index/User/userInfo [运行时间：0.041955s][吞吐率：23.84req/s] [内存消耗：3,495.70kb] [文件加载：46]
+[ info ] [ LANG ] E:\wamp64\www\git\hotel\thinkphp\lang\zh-cn.php
+>>>>>>> 843ca11f1a66aa154f4c3e7094824cd75b5097c8
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
     0 => 'index',
     1 => 'User',
+<<<<<<< HEAD
     2 => 'dologin',
   ),
 )
@@ -4554,6 +4633,25 @@
 [ info ] [ PARAM ] array (
 )
 [ info ] [ RUN ] app\index\controller\Index->index[ C:\wamp\www\tp\hotel\application\index\controller\Index.php ]
+=======
+    2 => 'userInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hoteltest.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.hoteltest.cn/index/index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mds4pfengtko32t5aboh1uvhk6; hzy_login_back=http://www.hoteltest.cn/',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\User->userinfo[ E:\wamp64\www\git\hotel\application\index\controller\User.php ]
+>>>>>>> 843ca11f1a66aa154f4c3e7094824cd75b5097c8
 [ info ] [ SESSION ] INIT array (
   'id' => '',
   'var_session_id' => '',
@@ -4562,11 +4660,16 @@
   'auto_start' => true,
 )
 [ info ] [ DB ] INIT mysql
+<<<<<<< HEAD
 [ info ] [ VIEW ] C:\wamp\www\tp\hotel\public/../application/index\view\index\index.html [ array (
+=======
+[ info ] [ VIEW ] E:\wamp64\www\git\hotel\public/../application/index\view\user\userinfo.html [ array (
+>>>>>>> 843ca11f1a66aa154f4c3e7094824cd75b5097c8
   0 => 'user',
   1 => 'room',
 ) ]
 [ info ] [ LOG ] INIT File
+<<<<<<< HEAD
 [ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=taobao;host=localhost;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `hotel_room` [ RunTime:0.002000s ]
 [ sql ] [ SQL ] SELECT * FROM `hotel_room` GROUP BY roomtype [ RunTime:0.000000s ]
@@ -4576,6 +4679,17 @@
 [ 2018-02-26T14:23:37+08:00 ] ::1 ::1 GET /index/css/font-awesome.css
 [ info ] www.test.com/index/css/font-awesome.css [运行时间：0.032002s][吞吐率：31.25req/s] [内存消耗：1,781.84kb] [文件加载：34]
 [ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+=======
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001787s ] mysql:dbname=taobao;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hotel_room` [ RunTime:0.000982s ]
+[ sql ] [ SQL ] SELECT * FROM `hotel_room` GROUP BY roomtype [ RunTime:0.000643s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hotel_user` [ RunTime:0.000800s ]
+[ sql ] [ SQL ] SELECT * FROM `hotel_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000451s ]
+---------------------------------------------------------------
+[ 2018-02-26T10:57:40+08:00 ] ::1 ::1 GET /index/css/font-awesome.css
+[ info ] www.hoteltest.cn/index/css/font-awesome.css [运行时间：0.031120s][吞吐率：32.13req/s] [内存消耗：2,062.85kb] [文件加载：34]
+[ info ] [ LANG ] E:\wamp64\www\git\hotel\thinkphp\lang\zh-cn.php
+>>>>>>> 843ca11f1a66aa154f4c3e7094824cd75b5097c8
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
@@ -4586,6 +4700,7 @@
   ),
 )
 [ info ] [ HEADER ] array (
+<<<<<<< HEAD
   'host' => 'www.test.com',
   'connection' => 'keep-alive',
   'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
@@ -4620,20 +4735,37 @@
   'accept-encoding' => 'gzip, deflate',
   'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
   'cookie' => 'PHPSESSID=9gaavl688ke7e16dvsk1vo5eg0; hzy_login_back=http://www.test.com/',
+=======
+  'host' => 'www.hoteltest.cn',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www.hoteltest.cn/index/User/userInfo',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mds4pfengtko32t5aboh1uvhk6; hzy_login_back=http://www.hoteltest.cn/',
+>>>>>>> 843ca11f1a66aa154f4c3e7094824cd75b5097c8
 )
 [ info ] [ PARAM ] array (
 )
 [ info ] [ LOG ] INIT File
 ---------------------------------------------------------------
+<<<<<<< HEAD
 [ 2018-02-26T14:23:42+08:00 ] ::1 ::1 GET /index/User/userInfo
 [ info ] www.test.com/index/User/userInfo [运行时间：0.071004s][吞吐率：14.08req/s] [内存消耗：3,146.50kb] [文件加载：48]
 [ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+=======
+[ 2018-02-26T10:57:46+08:00 ] ::1 ::1 GET /index/User/loginOut
+[ info ] www.hoteltest.cn/index/User/loginOut [运行时间：0.026042s][吞吐率：38.40req/s] [内存消耗：2,493.23kb] [文件加载：40]
+[ info ] [ LANG ] E:\wamp64\www\git\hotel\thinkphp\lang\zh-cn.php
+>>>>>>> 843ca11f1a66aa154f4c3e7094824cd75b5097c8
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
     0 => 'index',
     1 => 'User',
+<<<<<<< HEAD
     2 => 'userInfo',
   ),
 )
@@ -4651,6 +4783,25 @@
 [ info ] [ PARAM ] array (
 )
 [ info ] [ RUN ] app\index\controller\User->userinfo[ C:\wamp\www\tp\hotel\application\index\controller\User.php ]
+=======
+    2 => 'loginOut',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hoteltest.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.hoteltest.cn/index/User/userInfo',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mds4pfengtko32t5aboh1uvhk6; hzy_login_back=http://www.hoteltest.cn/',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\User->loginOut[ E:\wamp64\www\git\hotel\application\index\controller\User.php ]
+>>>>>>> 843ca11f1a66aa154f4c3e7094824cd75b5097c8
 [ info ] [ SESSION ] INIT array (
   'id' => '',
   'var_session_id' => '',
@@ -4658,6 +4809,7 @@
   'type' => '',
   'auto_start' => true,
 )
+<<<<<<< HEAD
 [ info ] [ DB ] INIT mysql
 [ info ] [ VIEW ] C:\wamp\www\tp\hotel\public/../application/index\view\user\userinfo.html [ array (
   0 => 'user',
@@ -4725,6 +4877,13 @@
 [ 2018-02-26T14:23:47+08:00 ] ::1 ::1 GET /index/index/index
 [ info ] www.test.com/index/index/index [运行时间：0.070004s][吞吐率：14.28req/s] [内存消耗：2,906.07kb] [文件加载：46]
 [ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+=======
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-26T10:57:47+08:00 ] ::1 ::1 GET /index/index/index
+[ info ] www.hoteltest.cn/index/index/index [运行时间：0.037029s][吞吐率：27.01req/s] [内存消耗：3,497.28kb] [文件加载：46]
+[ info ] [ LANG ] E:\wamp64\www\git\hotel\thinkphp\lang\zh-cn.php
+>>>>>>> 843ca11f1a66aa154f4c3e7094824cd75b5097c8
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
@@ -4735,6 +4894,7 @@
   ),
 )
 [ info ] [ HEADER ] array (
+<<<<<<< HEAD
   'host' => 'www.test.com',
   'connection' => 'keep-alive',
   'upgrade-insecure-requests' => '1',
@@ -4748,6 +4908,21 @@
 [ info ] [ PARAM ] array (
 )
 [ info ] [ RUN ] app\index\controller\Index->index[ C:\wamp\www\tp\hotel\application\index\controller\Index.php ]
+=======
+  'host' => 'www.hoteltest.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.hoteltest.cn/index/User/userInfo',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mds4pfengtko32t5aboh1uvhk6; hzy_login_back=http://www.hoteltest.cn/',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\wamp64\www\git\hotel\application\index\controller\Index.php ]
+>>>>>>> 843ca11f1a66aa154f4c3e7094824cd75b5097c8
 [ info ] [ SESSION ] INIT array (
   'id' => '',
   'var_session_id' => '',
@@ -4756,11 +4931,16 @@
   'auto_start' => true,
 )
 [ info ] [ DB ] INIT mysql
+<<<<<<< HEAD
 [ info ] [ VIEW ] C:\wamp\www\tp\hotel\public/../application/index\view\index\index.html [ array (
+=======
+[ info ] [ VIEW ] E:\wamp64\www\git\hotel\public/../application/index\view\index\index.html [ array (
+>>>>>>> 843ca11f1a66aa154f4c3e7094824cd75b5097c8
   0 => 'user',
   1 => 'room',
 ) ]
 [ info ] [ LOG ] INIT File
+<<<<<<< HEAD
 [ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=taobao;host=localhost;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `hotel_room` [ RunTime:0.002000s ]
 [ sql ] [ SQL ] SELECT * FROM `hotel_room` GROUP BY roomtype [ RunTime:0.000000s ]
@@ -4770,6 +4950,17 @@
 [ 2018-02-26T14:23:47+08:00 ] ::1 ::1 GET /index/css/font-awesome.css
 [ info ] www.test.com/index/css/font-awesome.css [运行时间：0.031002s][吞吐率：32.26req/s] [内存消耗：1,781.84kb] [文件加载：34]
 [ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+=======
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001785s ] mysql:dbname=taobao;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hotel_room` [ RunTime:0.000849s ]
+[ sql ] [ SQL ] SELECT * FROM `hotel_room` GROUP BY roomtype [ RunTime:0.000587s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hotel_user` [ RunTime:0.000686s ]
+[ sql ] [ SQL ] SELECT * FROM `hotel_user` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000331s ]
+---------------------------------------------------------------
+[ 2018-02-26T10:57:47+08:00 ] ::1 ::1 GET /index/css/font-awesome.css
+[ info ] www.hoteltest.cn/index/css/font-awesome.css [运行时间：0.026439s][吞吐率：37.82req/s] [内存消耗：2,062.85kb] [文件加载：34]
+[ info ] [ LANG ] E:\wamp64\www\git\hotel\thinkphp\lang\zh-cn.php
+>>>>>>> 843ca11f1a66aa154f4c3e7094824cd75b5097c8
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
@@ -4780,6 +4971,7 @@
   ),
 )
 [ info ] [ HEADER ] array (
+<<<<<<< HEAD
   'host' => 'www.test.com',
   'connection' => 'keep-alive',
   'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
@@ -4788,14 +4980,30 @@
   'accept-encoding' => 'gzip, deflate',
   'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
   'cookie' => 'PHPSESSID=9gaavl688ke7e16dvsk1vo5eg0; hzy_login_back=http://www.test.com/',
+=======
+  'host' => 'www.hoteltest.cn',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www.hoteltest.cn/index/index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mds4pfengtko32t5aboh1uvhk6; hzy_login_back=http://www.hoteltest.cn/',
+>>>>>>> 843ca11f1a66aa154f4c3e7094824cd75b5097c8
 )
 [ info ] [ PARAM ] array (
 )
 [ info ] [ LOG ] INIT File
 ---------------------------------------------------------------
+<<<<<<< HEAD
 [ 2018-02-26T14:23:47+08:00 ] ::1 ::1 GET /index/images/bg_direction_nav.png
 [ info ] www.test.com/index/images/bg_direction_nav.png [运行时间：0.029002s][吞吐率：34.48req/s] [内存消耗：1,782.00kb] [文件加载：34]
 [ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+=======
+[ 2018-02-26T10:57:47+08:00 ] ::1 ::1 GET /index/images/bg_direction_nav.png
+[ info ] www.hoteltest.cn/index/images/bg_direction_nav.png [运行时间：0.031944s][吞吐率：31.30req/s] [内存消耗：2,062.91kb] [文件加载：34]
+[ info ] [ LANG ] E:\wamp64\www\git\hotel\thinkphp\lang\zh-cn.php
+>>>>>>> 843ca11f1a66aa154f4c3e7094824cd75b5097c8
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
@@ -4806,6 +5014,7 @@
   ),
 )
 [ info ] [ HEADER ] array (
+<<<<<<< HEAD
   'host' => 'www.test.com',
   'connection' => 'keep-alive',
   'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
@@ -14276,14 +14485,30 @@
   'accept-encoding' => 'gzip, deflate',
   'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
   'cookie' => 'PHPSESSID=7bsnbjas4u1net9oe1eq47pmm1',
+=======
+  'host' => 'www.hoteltest.cn',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.hoteltest.cn/index/css/flexslider.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mds4pfengtko32t5aboh1uvhk6; hzy_login_back=http://www.hoteltest.cn/',
+>>>>>>> 843ca11f1a66aa154f4c3e7094824cd75b5097c8
 )
 [ info ] [ PARAM ] array (
 )
 [ info ] [ LOG ] INIT File
 ---------------------------------------------------------------
+<<<<<<< HEAD
 [ 2018-02-26T17:54:44+08:00 ] ::1 ::1 GET /index/index/index
 [ info ] www.test.com/index/index/index [运行时间：0.152008s][吞吐率：6.58req/s] [内存消耗：2,902.71kb] [文件加载：46]
 [ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+=======
+[ 2018-02-26T11:06:55+08:00 ] ::1 ::1 GET /index/index/index
+[ info ] www.hoteltest.cn/index/index/index [运行时间：0.049584s][吞吐率：20.17req/s] [内存消耗：3,497.48kb] [文件加载：46]
+[ info ] [ LANG ] E:\wamp64\www\git\hotel\thinkphp\lang\zh-cn.php
+>>>>>>> 843ca11f1a66aa154f4c3e7094824cd75b5097c8
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
@@ -14294,6 +14519,7 @@
   ),
 )
 [ info ] [ HEADER ] array (
+<<<<<<< HEAD
   'host' => 'www.test.com',
   'connection' => 'keep-alive',
   'cache-control' => 'max-age=0',
@@ -14308,6 +14534,22 @@
 [ info ] [ PARAM ] array (
 )
 [ info ] [ RUN ] app\index\controller\Index->index[ C:\wamp\www\tp\hotel\application\index\controller\Index.php ]
+=======
+  'host' => 'www.hoteltest.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.hoteltest.cn/index/User/userInfo',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mds4pfengtko32t5aboh1uvhk6; hzy_login_back=http://www.hoteltest.cn/',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\wamp64\www\git\hotel\application\index\controller\Index.php ]
+>>>>>>> 843ca11f1a66aa154f4c3e7094824cd75b5097c8
 [ info ] [ SESSION ] INIT array (
   'id' => '',
   'var_session_id' => '',
@@ -14316,11 +14558,16 @@
   'auto_start' => true,
 )
 [ info ] [ DB ] INIT mysql
+<<<<<<< HEAD
 [ info ] [ VIEW ] C:\wamp\www\tp\hotel\public/../application/index\view\index\index.html [ array (
+=======
+[ info ] [ VIEW ] E:\wamp64\www\git\hotel\public/../application/index\view\index\index.html [ array (
+>>>>>>> 843ca11f1a66aa154f4c3e7094824cd75b5097c8
   0 => 'user',
   1 => 'room',
 ) ]
 [ info ] [ LOG ] INIT File
+<<<<<<< HEAD
 [ sql ] [ DB ] CONNECT:[ UseTime:0.015001s ] mysql:dbname=taobao;host=localhost;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `hotel_room` [ RunTime:0.033002s ]
 [ sql ] [ SQL ] SELECT * FROM `hotel_room` GROUP BY roomtype [ RunTime:0.014001s ]
@@ -14330,6 +14577,17 @@
 [ 2018-02-26T17:54:44+08:00 ] ::1 ::1 GET /index/css/font-awesome.css
 [ info ] www.test.com/index/css/font-awesome.css [运行时间：0.035002s][吞吐率：28.57req/s] [内存消耗：1,781.55kb] [文件加载：34]
 [ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+=======
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001798s ] mysql:dbname=taobao;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hotel_room` [ RunTime:0.000996s ]
+[ sql ] [ SQL ] SELECT * FROM `hotel_room` GROUP BY roomtype [ RunTime:0.000590s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hotel_user` [ RunTime:0.000684s ]
+[ sql ] [ SQL ] SELECT * FROM `hotel_user` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000272s ]
+---------------------------------------------------------------
+[ 2018-02-26T11:06:55+08:00 ] ::1 ::1 GET /index/css/font-awesome.css
+[ info ] www.hoteltest.cn/index/css/font-awesome.css [运行时间：0.031056s][吞吐率：32.20req/s] [内存消耗：2,062.85kb] [文件加载：34]
+[ info ] [ LANG ] E:\wamp64\www\git\hotel\thinkphp\lang\zh-cn.php
+>>>>>>> 843ca11f1a66aa154f4c3e7094824cd75b5097c8
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
@@ -14340,6 +14598,7 @@
   ),
 )
 [ info ] [ HEADER ] array (
+<<<<<<< HEAD
   'host' => 'www.test.com',
   'connection' => 'keep-alive',
   'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
@@ -14348,14 +14607,30 @@
   'accept-encoding' => 'gzip, deflate',
   'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
   'cookie' => 'PHPSESSID=7bsnbjas4u1net9oe1eq47pmm1',
+=======
+  'host' => 'www.hoteltest.cn',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www.hoteltest.cn/index/index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mds4pfengtko32t5aboh1uvhk6; hzy_login_back=http://www.hoteltest.cn/',
+>>>>>>> 843ca11f1a66aa154f4c3e7094824cd75b5097c8
 )
 [ info ] [ PARAM ] array (
 )
 [ info ] [ LOG ] INIT File
 ---------------------------------------------------------------
+<<<<<<< HEAD
 [ 2018-02-26T17:54:44+08:00 ] ::1 ::1 GET /index/images/bg_direction_nav.png
 [ info ] www.test.com/index/images/bg_direction_nav.png [运行时间：0.031002s][吞吐率：32.26req/s] [内存消耗：1,781.84kb] [文件加载：34]
 [ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+=======
+[ 2018-02-26T11:06:55+08:00 ] ::1 ::1 GET /index/images/bg_direction_nav.png
+[ info ] www.hoteltest.cn/index/images/bg_direction_nav.png [运行时间：0.039729s][吞吐率：25.17req/s] [内存消耗：2,062.91kb] [文件加载：34]
+[ info ] [ LANG ] E:\wamp64\www\git\hotel\thinkphp\lang\zh-cn.php
+>>>>>>> 843ca11f1a66aa154f4c3e7094824cd75b5097c8
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
@@ -14366,6 +14641,7 @@
   ),
 )
 [ info ] [ HEADER ] array (
+<<<<<<< HEAD
   'host' => 'www.test.com',
   'connection' => 'keep-alive',
   'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
@@ -14374,6 +14650,16 @@
   'accept-encoding' => 'gzip, deflate',
   'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
   'cookie' => 'PHPSESSID=7bsnbjas4u1net9oe1eq47pmm1',
+=======
+  'host' => 'www.hoteltest.cn',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.hoteltest.cn/index/css/flexslider.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mds4pfengtko32t5aboh1uvhk6; hzy_login_back=http://www.hoteltest.cn/',
+>>>>>>> 843ca11f1a66aa154f4c3e7094824cd75b5097c8
 )
 [ info ] [ PARAM ] array (
 )
