@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:72:"C:\wamp\www\tp\hotel\public/../application/index\view\user\userinfo.html";i:1519625670;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -47,67 +48,7 @@
 
 </head>
 <body>
-	<div class="banner-section">
-		<section class="slider">
-			<div class="flexslider">
-				<ul class="slides">
-					<li>
-						<div class="slider-info">
-							<a href="/index/Destine/destine">
-							<img src="/index/images/ba1.jpg" class="img-responsive" alt="">
-							</a>
-						</div>
-						<div class="container">
-							<div class="banner-text">
-								<h3>在这里享受生活</h3>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="slider-info">
-							<a href="/index/Destine/destine">
-							<img src="/index/images/ba2.jpg" class="img-responsive" alt="">
-							</a>
-						</div>
-						<div class="container">
-							<div class="banner-text">
-								<h3>在这里享受便利</h3>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="slider-info">
-							<a href="/index/Destine/destine">
-							<img src="/index/images/ba3.jpg" class="img-responsive" alt="">
-							</a>
-						</div>
-						<div class="container">
-							<div class="banner-text">
-								<h3>在这里享受最高端的服务</h3>
-							</div>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</section>
-			<!-- FlexSlider -->
-			<script defer src="/index/js/jquery.flexslider.js"></script>
-				<script type="text/javascript">
-					$(function(){
-						SyntaxHighlighter.all();
-					});
-					$(window).load(function(){
-					$('.flexslider').flexslider({
-					animation: "slide",
-					start: function(slider){
-					  $('body').removeClass('loading');
-					}
-					});
-					});
-				</script>
-			<!-- FlexSlider -->
-			<!-- slider -->
-	</div>
+
     <div class="header">
 		<div class="container">
 			<div class="header-menu">
@@ -132,11 +73,10 @@
 
 						  <ul class="nav navbar-nav">
 							
-							{if empty($Think.session.username)}
-							{else}
-							<li><a href="/index/User/userInfo">尊敬的用户 {$user['username']}</a></li>
+							<?php if(empty(\think\Session::get('username'))): else: ?>
+							<li><a href="/index/User/userInfo">尊敬的用户 <?php echo $user['username']; ?></a></li>
 
-							{/if}
+							<?php endif; ?>
 							<li class="active"><a href="/index/index/index" data-hover="Home">首页</a></li>
 							<li><a href="/index/Meal/meal" data-hover="About">房间餐</a></li>
 							<li><a data-hover="Restaurant" href="/index/Restaurant/restaurant">餐厅</a></li>
@@ -144,12 +84,12 @@
 							<li><a data-hover="Rooms" href="/index/Rooms/rooms">房间</a></li>
 							<li><a  href="/index/Destine/destine" data-hover="codes">预定</a></li>
 							<li><a data-hover="Contact" href="/index/Contact/contact.html">留言</a></li>
-							{if empty($Think.session.username)}
+							<?php if(empty(\think\Session::get('username'))): ?>
 							<li><a href="/index/User/login">登录/注册</a></li>
-							{else}
+							<?php else: ?>
 
 							<li><a href="/index/User/loginOut">退出</a></li>
-							{/if}
+							<?php endif; ?>
 						  </ul>
 						</div><!-- /.navbar-collapse -->
 					</div><!-- /.container-fluid -->
@@ -160,124 +100,81 @@
 	</div>
 		<!--header-->		
 		<div class="content">
-			<!--welcome-->
-			<div class="welcome">
+			
+			
+			<div class="testimonial-section">
 				<div class="container">
-					<h2 class="tittle">欢迎光临</h2><span></span>>
-						<p class="wel text">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp这可能是你见过最好的酒店。我们拥有一流的就餐环境，一流的房间质量，整洁的住宿用品，美味可口的佳肴。还有你意想不到的服务，一切只为了你。</p>
-					<div class="wel-grids">
-						<div class="col-md-3 wel-grid">
-							<img src="/index/images/w1.jpg" class="img-responsive gray" alt=""/>
-							<h4>豪华套房</h4>
-							<p></p>
+					<h3 class="tittle">用户信息</h3>
+					<div class="testimonial-grids">
+						<div class="col-md-6 testimonial-grid">
+							<div class="testimonial-left">
+								<img src="<?php echo $user['picture']; ?>" class="img-responsive" alt=""/>
+							</div>
+							<div class="testimonial-right">
+								<div class="testimonial-text">
+									<h5>用户名:<?php echo $user['username']; ?></h5>
+								</div>
+								<div class="testimonial-rating">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+								<div class="clearfix"></div>
+									<p>真实姓名:<?php echo $user['realyname']; ?></p>
+									<p>手机号:<?php echo $user['tel']; ?></p>
+									<p>邮箱:<?php echo $user['email']; ?></p>
+									<p>身份证:<?php echo substr($user['usersfz'],0,14); ?>****</p>
+									<p>钱包:<span style="color:red;"><?php echo $user['u_money']; ?></span></p>
+									<button type="button" class="btn btn-lg btn-success" style="font-size:10px;" onclick="cong()">充值</button>
+									<div class="testimonial-sign">-个人信息</div>
+
+								</div>
+								<div class="clearfix"></div>
 						</div>
-						<div class="col-md-3 wel-grid">
-							<img src="/index/images/w2.jpg" class="img-responsive gray" alt=""/>
-							<h4>标准套房</h4>
-							<p></p>
-						</div>
-						<div class="col-md-3 wel-grid">
-							<img src="/index/images/w3.jpg" class="img-responsive gray" alt=""/>
-							<h4>休闲专区</h4>
-							<p></p>
-						</div>
-						<div class="col-md-3 wel-grid">
-							<img src="/index/images/w4.jpg" class="img-responsive gray" alt=""/>
-							<h4>额外服务</h4>
-							<p></p>
+
+						<div class="col-md-6 testimonial-grid test3">
+							<div class="testimonial-left">
+								
+									<form action="/index/index/upload" enctype="multipart/form-data" method="post">
+									
+	            					<input type="file" name="image" style="height:20px;width:75px;" />
+	            					
+	            					<input type="submit" value="上传头像" style="margin-top:20px;"/>
+	            					</form>
+	            					<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=564732320&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:3122962752:51" alt="点击这里给我发消息" title="点击这里给我发消息"/ style="margin-top:50px;"></a>
+        						
+							</div>
+							<div class="testimonial-right">
+								<div class="testimonial-text">
+									<h5></h5>
+								</div>
+								<div class="testimonial-rating">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+								<div class="clearfix"></div>
+								<span>真实姓名：</span>
+								<p><input type="text" name="realyname" value="<?php echo $user['realyname']; ?>" autocomplete="off"></p>
+								<span>手机：</span>
+								<p><input type="text" name="tel" value="<?php echo $user['tel']; ?>" autocomplete="off"></p>
+								<span>邮箱：</span>
+								<p><input type="text" name="email" value="<?php echo $user['email']; ?>" autocomplete="off"></p>
+								<span>身份证：</span>
+								<p><input type="text" name="usersfz" value="<?php echo substr($user['usersfz'],0,14); ?>****" autocomplete="off"></p>
+								<div class="testimonial-sign"><button type="submit" name="xinxi" id="xingxi">完善个人信息</button></div>
+							
+							</div>
+							<div class="clearfix"></div>
 						</div>
 						<div class="clearfix"></div>
 					</div>
 				</div>
 			</div>
-			<!--welcome-->
-			<div class="resort-section">
-				<div class="container">
-					<h3 class="tittle">特别推荐<span></span></h3>
-					<div class="resort-grids">
-				<!-- start content_slider -->
-						<div id="owl-demo" class="owl-carousel">
-							{foreach $room as $val}
-					        <div class="item">
-					           <div class="col-md-6 cap-img">
-									<img src="{$val.r_picture}" class="img-responsive gray" alt=""/>
-								</div>
-								<div class="col-md-6 cap">
-								{if $val.roomtype == 1}
-									<h4>普通客房</h4>
-								{elseif ($val.roomtype == 2)}
-									<h4>标准客房</h4>
-								{elseif ($val.roomtype == 3)}
-									<h4>高级客房</h4>
-								{elseif ($val.roomtype == 4)}
-									<h4>豪华客房</h4>
-								{elseif ($val.roomtype == 5)}
-									<h4>总统客房</h4>
-								{/if}	
-									<!-- <ul class="cap1">
-										<li><i class="glyphicon glyphicon-map-marker"></i> 33 Street Name, City Name United States</li>
-										<li><i class="glyphicon glyphicon-plane"></i> US Airlines</li>
-										<li><i class="glyphicon glyphicon-road"></i> Free Transport</li>
-									</ul> -->										
-									<p>{$val.room_content}</p>
-									<div class="detais">
-										<div class="col-md-9 deatils-left">
-											<div class="list">
-												<ul>
-													<li><i class="glyphicon glyphicon-thumbs-up"></i> Free Private Parking is Available</li>
-													<li><i class="glyphicon glyphicon-cutlery"></i>在客房内用餐服务09:00AM-12:00AM</li>
-													<li><i class="glyphicon glyphicon-signal"></i> Free High Speed Wi-Fi Internet in Room</li>
-												</ul>
-											</div>
-										</div>
-										<div class="col-md-3 deatils-right">
-											<div class="detail-top">
-												<span>money</span>
-												<h4>{$val.roomprice}</h4>
-											</div>
-										</div>
-										<div class="clearfix"> </div>
-									</div>
-								</div>
-					            <div class="clearfix"> </div>
-					        </div>
-					        {/foreach}
-				        </div>
-					</div>
-				</div>
-			</div>
-
-			<div class="superlist">
-				<div class="container">
-					<h3 class="tittle">精彩图集</h3>
-					<p class="wel text">这里的每张图片都是实景拍摄，优雅的环境足以让您心动，我们力图做的更好让您满意。</p>
-					<div class="super-grids">
-						<div class="col-md-8 super-grid">
-							<div class="super-top">
-							<img src="/index/images/s1.jpg" class="img-responsive gray" alt=""/>
-							</div>
-							<div class="super-bottom">
-								<div class="col-md-6 super-left">
-								<img src="/index/images/s2.jpg" class="img-responsive gray" alt=""/>
-								</div>
-								<div class="col-md-6 super-right">
-								<img src="/index/images/s3.jpg" class="img-responsive gray" alt=""/>
-								</div>
-								<div class="clearfix"></div>
-							</div>
-						</div>
-						<div class="col-md-4 super-grid1">
-							<div class="super-top">
-								<img src="/index/images/s4.jpg" class="img-responsive gray" alt=""/>
-									<h4>精工细作</h4>
-									<p>本酒店的室内设计由知名设计团队耗时3年打造，并选用世界一流环保建材。付出如此高昂的代价，只为能给您舒适的体验</p>
-							</div>
-						</div>
-							<div class="clearfix"></div>
-					</div>
-				</div>
-
-			
 		</div>
 
 		<div class="footer-section">
@@ -443,6 +340,6 @@ function cong()
             var message=$("#message").val();  
             console.log(ws.send(message));  
         })  
-    })
+    })  
 </script>
 </html>

@@ -262,6 +262,10 @@ ul.cap1 li {
     padding: 5em 0;
     background: #F9F9F9;
 }
+.article {
+    padding: 5em 0;
+    background: #E9F1EF;
+}
 .testimonial-left {
     float: left;
     width: 16%;

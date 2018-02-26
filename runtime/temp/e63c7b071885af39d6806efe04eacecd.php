@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:70:"C:\wamp\www\tp\hotel\public/../application/index\view\index\index.html";i:1519638605;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -132,11 +133,10 @@
 
 						  <ul class="nav navbar-nav">
 							
-							{if empty($Think.session.username)}
-							{else}
-							<li><a href="/index/User/userInfo">尊敬的用户 {$user['username']}</a></li>
+							<?php if(empty(\think\Session::get('username'))): else: ?>
+							<li><a href="/index/User/userInfo">尊敬的用户 <?php echo $user['username']; ?></a></li>
 
-							{/if}
+							<?php endif; ?>
 							<li class="active"><a href="/index/index/index" data-hover="Home">首页</a></li>
 							<li><a href="/index/Meal/meal" data-hover="About">房间餐</a></li>
 							<li><a data-hover="Restaurant" href="/index/Restaurant/restaurant">餐厅</a></li>
@@ -144,12 +144,12 @@
 							<li><a data-hover="Rooms" href="/index/Rooms/rooms">房间</a></li>
 							<li><a  href="/index/Destine/destine" data-hover="codes">预定</a></li>
 							<li><a data-hover="Contact" href="/index/Contact/contact.html">留言</a></li>
-							{if empty($Think.session.username)}
+							<?php if(empty(\think\Session::get('username'))): ?>
 							<li><a href="/index/User/login">登录/注册</a></li>
-							{else}
+							<?php else: ?>
 
 							<li><a href="/index/User/loginOut">退出</a></li>
-							{/if}
+							<?php endif; ?>
 						  </ul>
 						</div><!-- /.navbar-collapse -->
 					</div><!-- /.container-fluid -->
@@ -197,29 +197,29 @@
 					<div class="resort-grids">
 				<!-- start content_slider -->
 						<div id="owl-demo" class="owl-carousel">
-							{foreach $room as $val}
+							<?php foreach($room as $val): ?>
 					        <div class="item">
 					           <div class="col-md-6 cap-img">
-									<img src="{$val.r_picture}" class="img-responsive gray" alt=""/>
+									<img src="<?php echo $val['r_picture']; ?>" class="img-responsive gray" alt=""/>
 								</div>
 								<div class="col-md-6 cap">
-								{if $val.roomtype == 1}
+								<?php if($val['roomtype'] == 1): ?>
 									<h4>普通客房</h4>
-								{elseif ($val.roomtype == 2)}
+								<?php elseif(($val['roomtype'] == 2)): ?>
 									<h4>标准客房</h4>
-								{elseif ($val.roomtype == 3)}
+								<?php elseif(($val['roomtype'] == 3)): ?>
 									<h4>高级客房</h4>
-								{elseif ($val.roomtype == 4)}
+								<?php elseif(($val['roomtype'] == 4)): ?>
 									<h4>豪华客房</h4>
-								{elseif ($val.roomtype == 5)}
+								<?php elseif(($val['roomtype'] == 5)): ?>
 									<h4>总统客房</h4>
-								{/if}	
+								<?php endif; ?>	
 									<!-- <ul class="cap1">
 										<li><i class="glyphicon glyphicon-map-marker"></i> 33 Street Name, City Name United States</li>
 										<li><i class="glyphicon glyphicon-plane"></i> US Airlines</li>
 										<li><i class="glyphicon glyphicon-road"></i> Free Transport</li>
 									</ul> -->										
-									<p>{$val.room_content}</p>
+									<p><?php echo $val['room_content']; ?></p>
 									<div class="detais">
 										<div class="col-md-9 deatils-left">
 											<div class="list">
@@ -233,7 +233,7 @@
 										<div class="col-md-3 deatils-right">
 											<div class="detail-top">
 												<span>money</span>
-												<h4>{$val.roomprice}</h4>
+												<h4><?php echo $val['roomprice']; ?></h4>
 											</div>
 										</div>
 										<div class="clearfix"> </div>
@@ -241,7 +241,7 @@
 								</div>
 					            <div class="clearfix"> </div>
 					        </div>
-					        {/foreach}
+					        <?php endforeach; ?>
 				        </div>
 					</div>
 				</div>
