@@ -39,6 +39,7 @@ class Acticle extends controller
 			//查询出该管理员的信息
 			$aidselect = $this->acticle->aidselect($aid);
 			foreach ($aidselect as $key => $value) {
+
 				$admintype = $value['admintype'];
 				$ausername = $value['ausername'];
 			}
@@ -60,7 +61,7 @@ class Acticle extends controller
 					$data = [
 					'aid' => $aid,
 					'admintype' => $admintype,
-					'i_content' => '添加消息成功',
+					'i_content' => '添加文章成功',
 					'ausername' => $ausername,
 					'aip' => $ip,
 					'alogtime' => $time,
