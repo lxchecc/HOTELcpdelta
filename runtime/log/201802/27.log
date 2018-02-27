@@ -1,0 +1,470 @@
+---------------------------------------------------------------
+[ 2018-02-27T09:07:40+08:00 ] ::1 ::1 GET /admin/login/login.html
+[ info ] www.test.com/admin/login/login.html [运行时间：0.111006s][吞吐率：9.01req/s] [内存消耗：3,122.42kb] [文件加载：47]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ C:\wamp\www\tp\hotel\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp\www\tp\hotel\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-27T09:07:40+08:00 ] ::1 ::1 GET /admin/images/loginsj.png
+[ info ] www.test.com/admin/images/loginsj.png [运行时间：0.035002s][吞吐率：28.57req/s] [内存消耗：1,781.43kb] [文件加载：34]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'images',
+    2 => 'loginsj.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.test.com/admin/assets/css/ace.min.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-27T09:07:43+08:00 ] ::1 ::1 GET /
+[ info ] www.test.com/ [运行时间：0.067004s][吞吐率：14.92req/s] [内存消耗：2,902.16kb] [文件加载：46]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\wamp\www\tp\hotel\application\index\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp\www\tp\hotel\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'room',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=taobao;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hotel_room` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `hotel_room` GROUP BY roomtype [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hotel_user` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `hotel_user` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-02-27T09:07:43+08:00 ] ::1 ::1 GET /index/css/font-awesome.css
+[ info ] www.test.com/index/css/font-awesome.css [运行时间：0.037002s][吞吐率：27.03req/s] [内存消耗：1,781.47kb] [文件加载：34]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'css',
+    2 => 'font-awesome.css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www.test.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=1felce1pdtb4e9do1b8oirci22',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-27T09:07:44+08:00 ] ::1 ::1 GET /index/images/bg_direction_nav.png
+[ info ] www.test.com/index/images/bg_direction_nav.png [运行时间：0.035002s][吞吐率：28.57req/s] [内存消耗：1,781.84kb] [文件加载：34]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'images',
+    2 => 'bg_direction_nav.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.test.com/index/css/flexslider.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=1felce1pdtb4e9do1b8oirci22',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-27T09:07:45+08:00 ] ::1 ::1 GET /index/User/login
+[ info ] www.test.com/index/User/login [运行时间：0.039003s][吞吐率：25.64req/s] [内存消耗：2,074.36kb] [文件加载：39]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'User',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.test.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=1felce1pdtb4e9do1b8oirci22',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\User->login[ C:\wamp\www\tp\hotel\application\index\controller\User.php ]
+[ info ] [ VIEW ] C:\wamp\www\tp\hotel\public/../application/index\view\user\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-27T09:07:45+08:00 ] ::1 ::1 GET /index/login/images/person.png
+[ info ] www.test.com/index/login/images/person.png [运行时间：0.048002s][吞吐率：20.83req/s] [内存消耗：1,781.55kb] [文件加载：34]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.test.com/index/login/css/style.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=1felce1pdtb4e9do1b8oirci22',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-27T09:07:45+08:00 ] ::1 ::1 GET /index/login/images/lock.png
+[ info ] www.test.com/index/login/images/lock.png [运行时间：0.059003s][吞吐率：16.95req/s] [内存消耗：1,781.55kb] [文件加载：34]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.test.com/index/login/css/style.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=1felce1pdtb4e9do1b8oirci22',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-27T09:07:45+08:00 ] ::1 ::1 GET /index/login/images/phone.png
+[ info ] www.test.com/index/login/images/phone.png [运行时间：0.043002s][吞吐率：23.25req/s] [内存消耗：1,781.55kb] [文件加载：34]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.test.com/index/login/css/style.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=1felce1pdtb4e9do1b8oirci22',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-27T09:07:53+08:00 ] ::1 ::1 POST /index/User/doUsed
+[ info ] www.test.com/index/User/doUsed [运行时间：0.062003s][吞吐率：16.13req/s] [内存消耗：2,889.47kb] [文件加载：45]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'User',
+    2 => 'doUsed',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'content-length' => '10',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.test.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www.test.com/index/User/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=1felce1pdtb4e9do1b8oirci22; hzy_login_back=http://www.test.com/',
+)
+[ info ] [ PARAM ] array (
+  'user' => 'csy11',
+)
+[ info ] [ RUN ] app\index\controller\User->doUsed[ C:\wamp\www\tp\hotel\application\index\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=taobao;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hotel_user` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `hotel_user` WHERE  `username` = 'csy11' [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-02-27T09:08:03+08:00 ] ::1 ::1 POST /index/User/signPhone
+[ info ] www.test.com/index/User/signPhone [运行时间：0.204011s][吞吐率：4.90req/s] [内存消耗：2,181.16kb] [文件加载：44]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'User',
+    2 => 'signPhone',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'content-length' => '17',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.test.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www.test.com/index/User/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=1felce1pdtb4e9do1b8oirci22; hzy_login_back=http://www.test.com/',
+)
+[ info ] [ PARAM ] array (
+  'phone' => '15040579369',
+)
+[ info ] [ RUN ] app\index\controller\User->signPhone[ C:\wamp\www\tp\hotel\application\index\controller\User.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]setcookie() expects parameter 3 to be integer, float given[C:\wamp\www\tp\hotel\thinkphp\library\think\Cookie.php:97]
+---------------------------------------------------------------
+[ 2018-02-27T09:08:18+08:00 ] ::1 ::1 POST /index/User/register
+[ info ] www.test.com/index/User/register [运行时间：0.125007s][吞吐率：8.00req/s] [内存消耗：3,242.18kb] [文件加载：48]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'User',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'content-length' => '57',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.test.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www.test.com/index/User/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=1felce1pdtb4e9do1b8oirci22; hzy_login_back=http://www.test.com/',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'csy11',
+  'phone' => '15040579369',
+  'yzm' => '8f14',
+  'passwd' => 'cheng123',
+)
+[ info ] [ RUN ] app\index\controller\User->register[ C:\wamp\www\tp\hotel\application\index\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=taobao;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hotel_user` [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SELECT * FROM `hotel_user` WHERE  `username` = 'csy11' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `hotel_user` (`tel` , `uip` , `username` , `password` , `create_time` , `update_time`) VALUES ('15040579369' , 2130706433 , 'csy11' , '66f469382db2328c876b700deb336220' , '2018-02-27 09:08:18' , '2018-02-27 09:08:18') [ RunTime:0.060003s ]
+---------------------------------------------------------------
+[ 2018-02-27T09:08:18+08:00 ] ::1 ::1 GET /index/index/index
+[ info ] www.test.com/index/index/index [运行时间：0.151009s][吞吐率：6.62req/s] [内存消耗：2,905.97kb] [文件加载：46]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.test.com/index/User/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=1felce1pdtb4e9do1b8oirci22; hzy_login_back=http://www.test.com/',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\wamp\www\tp\hotel\application\index\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp\www\tp\hotel\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'room',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:dbname=taobao;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hotel_room` [ RunTime:0.090006s ]
+[ sql ] [ SQL ] SELECT * FROM `hotel_room` GROUP BY roomtype [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hotel_user` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `hotel_user` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-02-27T09:08:18+08:00 ] ::1 ::1 GET /index/css/font-awesome.css
+[ info ] www.test.com/index/css/font-awesome.css [运行时间：0.031001s][吞吐率：32.26req/s] [内存消耗：1,781.84kb] [文件加载：34]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'css',
+    2 => 'font-awesome.css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www.test.com/index/index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=1felce1pdtb4e9do1b8oirci22; hzy_login_back=http://www.test.com/',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-27T09:08:18+08:00 ] ::1 ::1 GET /index/images/bg_direction_nav.png
+[ info ] www.test.com/index/images/bg_direction_nav.png [运行时间：0.039002s][吞吐率：25.64req/s] [内存消耗：1,782.00kb] [文件加载：34]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'images',
+    2 => 'bg_direction_nav.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.test.com/index/css/flexslider.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=1felce1pdtb4e9do1b8oirci22; hzy_login_back=http://www.test.com/',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File

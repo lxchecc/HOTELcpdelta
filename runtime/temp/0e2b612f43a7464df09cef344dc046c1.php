@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\wamp\www\tp\hotel\public/../application/index\view\user\login.html";i:1519625670;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\wamp\www\tp\hotel\public/../application/index\view\user\login.html";i:1519653726;}*/ ?>
 <!doctype html>
 <html>
 <head>

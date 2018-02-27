@@ -17728,3 +17728,1608 @@
 [ sql ] [ SQL ] SELECT * FROM `hotel_admin` WHERE  `aid` = 1 [ RunTime:0.001000s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `hotel_admininfo` [ RunTime:0.002000s ]
 [ sql ] [ SQL ] SELECT * FROM `hotel_admininfo` WHERE  `aid` = 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-02-26T22:02:43+08:00 ] ::1 ::1 GET /
+[ info ] www.test.com/ [运行时间：0.138008s][吞吐率：7.25req/s] [内存消耗：3,158.66kb] [文件加载：48]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=7bsnbjas4u1net9oe1eq47pmm1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\wamp\www\tp\hotel\application\index\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp\www\tp\hotel\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'room',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=taobao;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hotel_room` [ RunTime:0.044002s ]
+[ sql ] [ SQL ] SELECT * FROM `hotel_room` GROUP BY roomtype [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hotel_user` [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT * FROM `hotel_user` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-02-26T22:02:43+08:00 ] ::1 ::1 GET /index/css/font-awesome.css
+[ info ] www.test.com/index/css/font-awesome.css [运行时间：0.037002s][吞吐率：27.03req/s] [内存消耗：1,781.47kb] [文件加载：34]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'css',
+    2 => 'font-awesome.css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www.test.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=7bsnbjas4u1net9oe1eq47pmm1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-26T22:02:43+08:00 ] ::1 ::1 GET /index/images/bg_direction_nav.png
+[ info ] www.test.com/index/images/bg_direction_nav.png [运行时间：0.036002s][吞吐率：27.78req/s] [内存消耗：1,781.84kb] [文件加载：34]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'images',
+    2 => 'bg_direction_nav.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.test.com/index/css/flexslider.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=7bsnbjas4u1net9oe1eq47pmm1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-26T22:02:50+08:00 ] ::1 ::1 GET /index/Contact/contact.html
+[ info ] www.test.com/index/Contact/contact.html [运行时间：0.054004s][吞吐率：18.52req/s] [内存消耗：2,249.84kb] [文件加载：41]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Contact',
+    2 => 'contact',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.test.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=7bsnbjas4u1net9oe1eq47pmm1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Contact->contact[ C:\wamp\www\tp\hotel\application\index\controller\Contact.php ]
+[ info ] [ VIEW ] C:\wamp\www\tp\hotel\public/../application/index\view\contact\contact.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-26T22:02:50+08:00 ] ::1 ::1 GET /index/css/font-awesome.min.css
+[ info ] www.test.com/index/css/font-awesome.min.css [运行时间：0.039003s][吞吐率：25.64req/s] [内存消耗：1,781.56kb] [文件加载：34]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'css',
+    2 => 'font-awesome.min.css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www.test.com/index/Contact/contact.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=7bsnbjas4u1net9oe1eq47pmm1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-26T22:02:50+08:00 ] ::1 ::1 GET /index/css/font-awesome.min.css
+[ info ] www.test.com/index/css/font-awesome.min.css [运行时间：0.034002s][吞吐率：29.41req/s] [内存消耗：1,781.56kb] [文件加载：34]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'css',
+    2 => 'font-awesome.min.css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www.test.com/index/Contact/contact.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=7bsnbjas4u1net9oe1eq47pmm1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-26T22:02:50+08:00 ] ::1 ::1 GET /index/css/bg.gif
+[ info ] www.test.com/index/css/bg.gif [运行时间：0.034002s][吞吐率：29.41req/s] [内存消耗：1,781.52kb] [文件加载：34]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'css',
+    2 => 'bg.gif',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.test.com/index/css/style1.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=7bsnbjas4u1net9oe1eq47pmm1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-26T22:03:21+08:00 ] ::1 ::1 GET /index/User/login
+[ info ] www.test.com/index/User/login [运行时间：0.058003s][吞吐率：17.24req/s] [内存消耗：2,247.91kb] [文件加载：41]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'User',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.test.com/index/Contact/contact.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=7bsnbjas4u1net9oe1eq47pmm1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\User->login[ C:\wamp\www\tp\hotel\application\index\controller\User.php ]
+[ info ] [ VIEW ] C:\wamp\www\tp\hotel\public/../application/index\view\user\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-26T22:03:21+08:00 ] ::1 ::1 GET /index/login/images/phone.png
+[ info ] www.test.com/index/login/images/phone.png [运行时间：0.049003s][吞吐率：20.41req/s] [内存消耗：1,781.55kb] [文件加载：34]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.test.com/index/login/css/style.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=7bsnbjas4u1net9oe1eq47pmm1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-26T22:03:21+08:00 ] ::1 ::1 GET /index/login/images/person.png
+[ info ] www.test.com/index/login/images/person.png [运行时间：0.043003s][吞吐率：23.25req/s] [内存消耗：1,781.55kb] [文件加载：34]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.test.com/index/login/css/style.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=7bsnbjas4u1net9oe1eq47pmm1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-26T22:03:21+08:00 ] ::1 ::1 GET /index/login/images/lock.png
+[ info ] www.test.com/index/login/images/lock.png [运行时间：0.139008s][吞吐率：7.19req/s] [内存消耗：1,781.55kb] [文件加载：34]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.test.com/index/login/css/style.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=7bsnbjas4u1net9oe1eq47pmm1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-26T22:03:26+08:00 ] ::1 ::1 GET /index/Contact/contact.html
+[ info ] www.test.com/index/Contact/contact.html [运行时间：0.045002s][吞吐率：22.22req/s] [内存消耗：2,059.23kb] [文件加载：39]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Contact',
+    2 => 'contact',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.test.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=7bsnbjas4u1net9oe1eq47pmm1; hzy_login_back=http://www.test.com/index/Contact/contact.html',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Contact->contact[ C:\wamp\www\tp\hotel\application\index\controller\Contact.php ]
+[ info ] [ VIEW ] C:\wamp\www\tp\hotel\public/../application/index\view\contact\contact.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-26T22:03:26+08:00 ] ::1 ::1 GET /index/css/font-awesome.min.css
+[ info ] www.test.com/index/css/font-awesome.min.css [运行时间：0.039002s][吞吐率：25.64req/s] [内存消耗：1,782.01kb] [文件加载：34]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'css',
+    2 => 'font-awesome.min.css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www.test.com/index/Contact/contact.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=7bsnbjas4u1net9oe1eq47pmm1; hzy_login_back=http://www.test.com/index/Contact/contact.html',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-26T22:03:41+08:00 ] ::1 ::1 GET /admin/login/login.html
+[ info ] www.test.com/admin/login/login.html [运行时间：0.116007s][吞吐率：8.62req/s] [内存消耗：3,288.73kb] [文件加载：49]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=7bsnbjas4u1net9oe1eq47pmm1; hzy_login_back=http://www.test.com/index/Contact/contact.html',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ C:\wamp\www\tp\hotel\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp\www\tp\hotel\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-26T22:03:41+08:00 ] ::1 ::1 GET /admin/images/loginsj.png
+[ info ] www.test.com/admin/images/loginsj.png [运行时间：0.038002s][吞吐率：26.31req/s] [内存消耗：1,782.02kb] [文件加载：34]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'images',
+    2 => 'loginsj.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.test.com/admin/assets/css/ace.min.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=7bsnbjas4u1net9oe1eq47pmm1; hzy_login_back=http://www.test.com/index/Contact/contact.html',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-26T22:03:52+08:00 ] ::1 ::1 POST /admin/Login/login
+[ info ] www.test.com/admin/Login/login [运行时间：0.222013s][吞吐率：4.50req/s] [内存消耗：3,310.68kb] [文件加载：55]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'content-length' => '46',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.test.com',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.test.com/admin/login/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=7bsnbjas4u1net9oe1eq47pmm1; hzy_login_back=http://www.test.com/index/Contact/contact.html',
+)
+[ info ] [ PARAM ] array (
+  'user' => 'admin',
+  'pwd' => '654321',
+  'login' => '登录',
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ C:\wamp\www\tp\hotel\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:dbname=taobao;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hotel_admin` [ RunTime:0.039002s ]
+[ sql ] [ SQL ] SELECT * FROM `hotel_admin` WHERE  `ausername` = 'admin' [ RunTime:0.009000s ]
+[ sql ] [ SQL ] UPDATE `hotel_admin`  SET `aip`=2130706433,`alogtime`=1519653832  WHERE  `aid` = 1 [ RunTime:0.059003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hotel_admininfo` [ RunTime:0.003000s ]
+[ error ] [10501]SQLSTATE[HY000]: General error: 1364 Field 'i_content' doesn't have a default value[C:\wamp\www\tp\hotel\thinkphp\library\think\db\Connection.php:466]
+---------------------------------------------------------------
+[ 2018-02-26T22:05:11+08:00 ] ::1 ::1 GET /index/Contact/contact.html
+[ info ] www.test.com/index/Contact/contact.html [运行时间：0.056003s][吞吐率：17.86req/s] [内存消耗：2,059.25kb] [文件加载：39]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Contact',
+    2 => 'contact',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.test.com/index/index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=7bsnbjas4u1net9oe1eq47pmm1; hzy_login_back=http://www.test.com/index/Contact/contact.html',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Contact->contact[ C:\wamp\www\tp\hotel\application\index\controller\Contact.php ]
+[ info ] [ VIEW ] C:\wamp\www\tp\hotel\public/../application/index\view\contact\contact.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-26T22:05:15+08:00 ] ::1 ::1 POST /admin/Login/login
+[ info ] www.test.com/admin/Login/login [运行时间：0.291016s][吞吐率：3.44req/s] [内存消耗：3,422.12kb] [文件加载：54]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'content-length' => '46',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'origin' => 'http://www.test.com',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.test.com/admin/login/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=7bsnbjas4u1net9oe1eq47pmm1; hzy_login_back=http://www.test.com/index/Contact/contact.html',
+)
+[ info ] [ PARAM ] array (
+  'user' => 'admin',
+  'pwd' => '654321',
+  'login' => '登录',
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ C:\wamp\www\tp\hotel\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] C:\wamp\www\tp\hotel\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=taobao;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hotel_admin` [ RunTime:0.059004s ]
+[ sql ] [ SQL ] SELECT * FROM `hotel_admin` WHERE  `ausername` = 'admin' [ RunTime:0.026001s ]
+[ sql ] [ SQL ] UPDATE `hotel_admin`  SET `aip`=2130706433,`alogtime`=1519653915  WHERE  `aid` = 1 [ RunTime:0.046003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hotel_admininfo` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] INSERT INTO `hotel_admininfo` (`aid` , `admintype` , `ausername` , `aip` , `alogtime`) VALUES (1 , 3 , 'admin' , 2130706433 , 1519653915) [ RunTime:0.053003s ]
+---------------------------------------------------------------
+[ 2018-02-26T22:05:19+08:00 ] ::1 ::1 GET /admin/Index/index
+[ info ] www.test.com/admin/Index/index [运行时间：0.117007s][吞吐率：8.55req/s] [内存消耗：3,459.79kb] [文件加载：50]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.test.com/admin/Login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=7bsnbjas4u1net9oe1eq47pmm1; hzy_login_back=http://www.test.com/index/Contact/contact.html',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wamp\www\tp\hotel\application\admin\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\wamp\www\tp\hotel\public/../application/admin\view\index\index.html [ array (
+  0 => 'admintype',
+  1 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=taobao;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hotel_admin` [ RunTime:0.041002s ]
+[ sql ] [ SQL ] SELECT * FROM `hotel_admin` WHERE  `aid` = 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-02-26T22:05:19+08:00 ] ::1 ::1 GET /admin/Index/home.html
+[ info ] www.test.com/admin/Index/home.html [运行时间：0.232013s][吞吐率：4.31req/s] [内存消耗：3,420.62kb] [文件加载：50]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'home',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.test.com/admin/Index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=7bsnbjas4u1net9oe1eq47pmm1; hzy_login_back=http://www.test.com/index/Contact/contact.html',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->home[ C:\wamp\www\tp\hotel\application\admin\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\wamp\www\tp\hotel\public/../application/admin\view\index\home.html [ array (
+  0 => 'addd',
+  1 => 'new',
+  2 => 'restyzf',
+  3 => 'restwzf',
+  4 => 'yrz',
+  5 => 'wrz',
+  6 => 'wzf',
+  7 => 'money',
+  8 => 'cjdingdan',
+  9 => 'dingdan',
+  10 => 'user',
+  11 => 'ip',
+  12 => 'time',
+  13 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.022001s ] mysql:dbname=taobao;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hotel_order` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `uid` FROM `hotel_order` [ RunTime:0.022002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hotel_order` WHERE  `oid` <> 0 LIMIT 1 [ RunTime:0.039002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hotel_sumption` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hotel_sumption` WHERE  `yid` <> 0 LIMIT 1 [ RunTime:0.027002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hotel_order` WHERE  `o_state` <> 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hotel_sumption` WHERE  `y_status` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(o_money) AS tp_sum FROM `hotel_order` WHERE  `o_state` = 1 LIMIT 1 [ RunTime:0.032001s ]
+[ sql ] [ SQL ] SELECT SUM(y_money) AS tp_sum FROM `hotel_sumption` WHERE  `y_status` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hotel_order` WHERE  `o_state` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hotel_order` WHERE  `ru_time` >= 1519653919 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hotel_order` WHERE  `ru_time` <= 1519653919 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hotel_sumption` WHERE  `y_status` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hotel_sumption` WHERE  `y_status` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hotel_menu` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hotel_menu` WHERE  `m_time` >= 1518357919 LIMIT 1 [ RunTime:0.010000s ]
+---------------------------------------------------------------
+[ 2018-02-26T22:05:19+08:00 ] ::1 ::1 GET /admin/Index/admin/assets/js/jquery.min.js
+[ info ] www.test.com/admin/Index/admin/assets/js/jquery.min.js [运行时间：0.091005s][吞吐率：10.99req/s] [内存消耗：3,187.71kb] [文件加载：50]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.test.com/admin/Index/home.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=7bsnbjas4u1net9oe1eq47pmm1; hzy_login_back=http://www.test.com/index/Contact/contact.html',
+)
+[ info ] [ PARAM ] array (
+  'assets' => 'js',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->admin[ C:\wamp\www\tp\hotel\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: aid[C:\wamp\www\tp\hotel\application\admin\controller\Index.php:92]
+---------------------------------------------------------------
+[ 2018-02-26T22:05:29+08:00 ] ::1 ::1 GET /admin/Acticle/acticleAdd
+[ info ] www.test.com/admin/Acticle/acticleAdd [运行时间：0.105006s][吞吐率：9.52req/s] [内存消耗：3,291.42kb] [文件加载：49]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Acticle',
+    2 => 'acticleAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.test.com/admin/Index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=7bsnbjas4u1net9oe1eq47pmm1; hzy_login_back=http://www.test.com/index/Contact/contact.html',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Acticle->acticleAdd[ C:\wamp\www\tp\hotel\application\admin\controller\Acticle.php ]
+[ info ] [ VIEW ] C:\wamp\www\tp\hotel\public/../application/admin\view\acticle\acticleadd.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-26T22:05:29+08:00 ] ::1 ::1 GET /admin/Acticle/Widget/ueditor/1.4.3/ueditor.all.min.js
+[ info ] www.test.com/admin/Acticle/Widget/ueditor/1.4.3/ueditor.all.min.js [运行时间：0.116006s][吞吐率：8.62req/s] [内存消耗：3,163.29kb] [文件加载：49]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Acticle',
+    2 => 'Widget',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.test.com/admin/Acticle/acticleAdd',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=7bsnbjas4u1net9oe1eq47pmm1; hzy_login_back=http://www.test.com/index/Contact/contact.html',
+)
+[ info ] [ PARAM ] array (
+  'ueditor' => '1.4.3',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-26T22:05:29+08:00 ] ::1 ::1 GET /admin/Acticle/Widget/ueditor/1.4.3/ueditor.config.js
+[ info ] www.test.com/admin/Acticle/Widget/ueditor/1.4.3/ueditor.config.js [运行时间：0.174010s][吞吐率：5.75req/s] [内存消耗：3,163.29kb] [文件加载：49]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Acticle',
+    2 => 'Widget',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.test.com/admin/Acticle/acticleAdd',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=7bsnbjas4u1net9oe1eq47pmm1; hzy_login_back=http://www.test.com/index/Contact/contact.html',
+)
+[ info ] [ PARAM ] array (
+  'ueditor' => '1.4.3',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-26T22:05:29+08:00 ] ::1 ::1 GET /admin/Acticle/Widget/ueditor/1.4.3/ueditor.all.min.js
+[ info ] www.test.com/admin/Acticle/Widget/ueditor/1.4.3/ueditor.all.min.js [运行时间：0.067004s][吞吐率：14.92req/s] [内存消耗：3,163.29kb] [文件加载：49]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Acticle',
+    2 => 'Widget',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.test.com/admin/Acticle/acticleAdd',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=7bsnbjas4u1net9oe1eq47pmm1; hzy_login_back=http://www.test.com/index/Contact/contact.html',
+)
+[ info ] [ PARAM ] array (
+  'ueditor' => '1.4.3',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-26T22:05:29+08:00 ] ::1 ::1 GET /admin/Acticle/Widget/ueditor/1.4.3/lang/zh-cn/zh-cn.js
+[ info ] www.test.com/admin/Acticle/Widget/ueditor/1.4.3/lang/zh-cn/zh-cn.js [运行时间：0.110006s][吞吐率：9.09req/s] [内存消耗：3,163.37kb] [文件加载：49]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Acticle',
+    2 => 'Widget',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.test.com/admin/Acticle/acticleAdd',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=7bsnbjas4u1net9oe1eq47pmm1; hzy_login_back=http://www.test.com/index/Contact/contact.html',
+)
+[ info ] [ PARAM ] array (
+  'ueditor' => '1.4.3',
+  'lang' => 'zh-cn',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-26T22:05:30+08:00 ] ::1 ::1 GET /admin/Acticle/Widget/ueditor/1.4.3/lang/zh-cn/zh-cn.js
+[ info ] www.test.com/admin/Acticle/Widget/ueditor/1.4.3/lang/zh-cn/zh-cn.js [运行时间：0.062004s][吞吐率：16.13req/s] [内存消耗：3,163.37kb] [文件加载：49]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Acticle',
+    2 => 'Widget',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.test.com/admin/Acticle/acticleAdd',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=7bsnbjas4u1net9oe1eq47pmm1; hzy_login_back=http://www.test.com/index/Contact/contact.html',
+)
+[ info ] [ PARAM ] array (
+  'ueditor' => '1.4.3',
+  'lang' => 'zh-cn',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-26T22:05:34+08:00 ] ::1 ::1 POST /admin/Acticle/acticleAdd
+[ info ] www.test.com/admin/Acticle/acticleAdd [运行时间：0.262015s][吞吐率：3.82req/s] [内存消耗：3,241.80kb] [文件加载：52]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Acticle',
+    2 => 'acticleAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'content-length' => '36',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.test.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www.test.com/admin/Acticle/acticleAdd',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=7bsnbjas4u1net9oe1eq47pmm1; hzy_login_back=http://www.test.com/index/Contact/contact.html',
+)
+[ info ] [ PARAM ] array (
+  'title' => 'qwe',
+  'brief' => 'qweqw',
+  'content' => 'wqewqe',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Acticle->acticleAdd[ C:\wamp\www\tp\hotel\application\admin\controller\Acticle.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=taobao;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hotel_admin` [ RunTime:0.046003s ]
+[ sql ] [ SQL ] SELECT * FROM `hotel_admin` WHERE  `aid` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hotel_xiaoxi` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] INSERT INTO `hotel_xiaoxi` (`aid` , `x_content` , `x_title` , `x_brief` , `x_time`) VALUES (1 , 'wqewqe' , 'qwe' , 'qweqw' , 1519653934) [ RunTime:0.096006s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hotel_admininfo` [ RunTime:0.007000s ]
+[ error ] [10501]SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '添加文章成功' for column 'i_content' at row 1[C:\wamp\www\tp\hotel\thinkphp\library\think\db\Connection.php:466]
+---------------------------------------------------------------
+[ 2018-02-26T22:05:37+08:00 ] ::1 ::1 GET /admin/Acticle/articleSort
+[ info ] www.test.com/admin/Acticle/articleSort [运行时间：0.263015s][吞吐率：3.80req/s] [内存消耗：3,436.63kb] [文件加载：50]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Acticle',
+    2 => 'articleSort',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.test.com/admin/Index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=7bsnbjas4u1net9oe1eq47pmm1; hzy_login_back=http://www.test.com/index/Contact/contact.html',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Acticle->articleSort[ C:\wamp\www\tp\hotel\application\admin\controller\Acticle.php ]
+[ info ] [ VIEW ] C:\wamp\www\tp\hotel\public/../application/admin\view\acticle\articlesort.html [ array (
+  0 => 'count',
+  1 => 'res',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=taobao;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hotel_xiaoxi` [ RunTime:0.021002s ]
+[ sql ] [ SQL ] SELECT * FROM `hotel_xiaoxi` [ RunTime:0.101005s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hotel_xiaoxi` WHERE  `xid` <> 0 LIMIT 1 [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[ 2018-02-26T22:05:45+08:00 ] ::1 ::1 GET /admin/Acticle/acticleAdd
+[ info ] www.test.com/admin/Acticle/acticleAdd [运行时间：0.095005s][吞吐率：10.53req/s] [内存消耗：3,125.90kb] [文件加载：47]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Acticle',
+    2 => 'acticleAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.test.com/admin/Index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=7bsnbjas4u1net9oe1eq47pmm1; hzy_login_back=http://www.test.com/index/Contact/contact.html',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Acticle->acticleAdd[ C:\wamp\www\tp\hotel\application\admin\controller\Acticle.php ]
+[ info ] [ VIEW ] C:\wamp\www\tp\hotel\public/../application/admin\view\acticle\acticleadd.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-26T22:05:45+08:00 ] ::1 ::1 GET /admin/Acticle/Widget/ueditor/1.4.3/ueditor.config.js
+[ info ] www.test.com/admin/Acticle/Widget/ueditor/1.4.3/ueditor.config.js [运行时间：0.091005s][吞吐率：10.99req/s] [内存消耗：3,163.29kb] [文件加载：49]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Acticle',
+    2 => 'Widget',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.test.com/admin/Acticle/acticleAdd',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=7bsnbjas4u1net9oe1eq47pmm1; hzy_login_back=http://www.test.com/index/Contact/contact.html',
+)
+[ info ] [ PARAM ] array (
+  'ueditor' => '1.4.3',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-26T22:05:45+08:00 ] ::1 ::1 GET /admin/Acticle/Widget/ueditor/1.4.3/ueditor.all.min.js
+[ info ] www.test.com/admin/Acticle/Widget/ueditor/1.4.3/ueditor.all.min.js [运行时间：0.150009s][吞吐率：6.67req/s] [内存消耗：3,163.29kb] [文件加载：49]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Acticle',
+    2 => 'Widget',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.test.com/admin/Acticle/acticleAdd',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=7bsnbjas4u1net9oe1eq47pmm1; hzy_login_back=http://www.test.com/index/Contact/contact.html',
+)
+[ info ] [ PARAM ] array (
+  'ueditor' => '1.4.3',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-26T22:05:45+08:00 ] ::1 ::1 GET /admin/Acticle/Widget/ueditor/1.4.3/lang/zh-cn/zh-cn.js
+[ info ] www.test.com/admin/Acticle/Widget/ueditor/1.4.3/lang/zh-cn/zh-cn.js [运行时间：0.102005s][吞吐率：9.80req/s] [内存消耗：3,163.37kb] [文件加载：49]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Acticle',
+    2 => 'Widget',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.test.com/admin/Acticle/acticleAdd',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=7bsnbjas4u1net9oe1eq47pmm1; hzy_login_back=http://www.test.com/index/Contact/contact.html',
+)
+[ info ] [ PARAM ] array (
+  'ueditor' => '1.4.3',
+  'lang' => 'zh-cn',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-26T22:05:45+08:00 ] ::1 ::1 GET /admin/Acticle/Widget/ueditor/1.4.3/ueditor.config.js
+[ info ] www.test.com/admin/Acticle/Widget/ueditor/1.4.3/ueditor.config.js [运行时间：0.068003s][吞吐率：14.71req/s] [内存消耗：3,163.29kb] [文件加载：49]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Acticle',
+    2 => 'Widget',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.test.com/admin/Acticle/acticleAdd',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=7bsnbjas4u1net9oe1eq47pmm1; hzy_login_back=http://www.test.com/index/Contact/contact.html',
+)
+[ info ] [ PARAM ] array (
+  'ueditor' => '1.4.3',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-26T22:05:45+08:00 ] ::1 ::1 GET /admin/Acticle/Widget/ueditor/1.4.3/ueditor.all.min.js
+[ info ] www.test.com/admin/Acticle/Widget/ueditor/1.4.3/ueditor.all.min.js [运行时间：0.057003s][吞吐率：17.54req/s] [内存消耗：3,163.29kb] [文件加载：49]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Acticle',
+    2 => 'Widget',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.test.com/admin/Acticle/acticleAdd',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=7bsnbjas4u1net9oe1eq47pmm1; hzy_login_back=http://www.test.com/index/Contact/contact.html',
+)
+[ info ] [ PARAM ] array (
+  'ueditor' => '1.4.3',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-26T22:05:45+08:00 ] ::1 ::1 GET /admin/Acticle/Widget/ueditor/1.4.3/lang/zh-cn/zh-cn.js
+[ info ] www.test.com/admin/Acticle/Widget/ueditor/1.4.3/lang/zh-cn/zh-cn.js [运行时间：0.059004s][吞吐率：16.95req/s] [内存消耗：3,163.37kb] [文件加载：49]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Acticle',
+    2 => 'Widget',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.test.com/admin/Acticle/acticleAdd',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=7bsnbjas4u1net9oe1eq47pmm1; hzy_login_back=http://www.test.com/index/Contact/contact.html',
+)
+[ info ] [ PARAM ] array (
+  'ueditor' => '1.4.3',
+  'lang' => 'zh-cn',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-26T22:07:42+08:00 ] ::1 ::1 GET /admin/login/login.html
+[ info ] www.test.com/admin/login/login.html [运行时间：0.076005s][吞吐率：13.16req/s] [内存消耗：3,123.20kb] [文件加载：47]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=7bsnbjas4u1net9oe1eq47pmm1; hzy_login_back=http://www.test.com/index/Contact/contact.html',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ C:\wamp\www\tp\hotel\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp\www\tp\hotel\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-26T22:07:42+08:00 ] ::1 ::1 GET /admin/images/loginsj.png
+[ info ] www.test.com/admin/images/loginsj.png [运行时间：0.039003s][吞吐率：25.64req/s] [内存消耗：1,782.02kb] [文件加载：34]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'images',
+    2 => 'loginsj.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.test.com/admin/assets/css/ace.min.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=7bsnbjas4u1net9oe1eq47pmm1; hzy_login_back=http://www.test.com/index/Contact/contact.html',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-26T22:07:51+08:00 ] ::1 ::1 POST /admin/Login/login
+[ info ] www.test.com/admin/Login/login [运行时间：0.324018s][吞吐率：3.09req/s] [内存消耗：3,268.75kb] [文件加载：52]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'content-length' => '46',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.test.com',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.test.com/admin/login/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=7bsnbjas4u1net9oe1eq47pmm1; hzy_login_back=http://www.test.com/index/Contact/contact.html',
+)
+[ info ] [ PARAM ] array (
+  'user' => 'admin',
+  'pwd' => '654321',
+  'login' => '登录',
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ C:\wamp\www\tp\hotel\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] C:\wamp\www\tp\hotel\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:dbname=taobao;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hotel_admin` [ RunTime:0.071004s ]
+[ sql ] [ SQL ] SELECT * FROM `hotel_admin` WHERE  `ausername` = 'admin' [ RunTime:0.002000s ]
+[ sql ] [ SQL ] UPDATE `hotel_admin`  SET `aip`=2130706433,`alogtime`=1519654071  WHERE  `aid` = 1 [ RunTime:0.026002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hotel_admininfo` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] INSERT INTO `hotel_admininfo` (`aid` , `admintype` , `ausername` , `aip` , `alogtime`) VALUES (1 , 3 , 'admin' , 2130706433 , 1519654071) [ RunTime:0.045002s ]
+---------------------------------------------------------------
+[ 2018-02-26T22:07:54+08:00 ] ::1 ::1 GET /admin/Index/index
+[ info ] www.test.com/admin/Index/index [运行时间：0.107006s][吞吐率：9.35req/s] [内存消耗：3,269.18kb] [文件加载：48]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.test.com/admin/Login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=7bsnbjas4u1net9oe1eq47pmm1; hzy_login_back=http://www.test.com/index/Contact/contact.html',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wamp\www\tp\hotel\application\admin\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\wamp\www\tp\hotel\public/../application/admin\view\index\index.html [ array (
+  0 => 'admintype',
+  1 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=taobao;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hotel_admin` [ RunTime:0.022002s ]
+[ sql ] [ SQL ] SELECT * FROM `hotel_admin` WHERE  `aid` = 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-02-26T22:07:54+08:00 ] ::1 ::1 GET /admin/Index/home.html
+[ info ] www.test.com/admin/Index/home.html [运行时间：0.135008s][吞吐率：7.41req/s] [内存消耗：3,255.09kb] [文件加载：48]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'home',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.test.com/admin/Index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=7bsnbjas4u1net9oe1eq47pmm1; hzy_login_back=http://www.test.com/index/Contact/contact.html',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->home[ C:\wamp\www\tp\hotel\application\admin\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\wamp\www\tp\hotel\public/../application/admin\view\index\home.html [ array (
+  0 => 'addd',
+  1 => 'new',
+  2 => 'restyzf',
+  3 => 'restwzf',
+  4 => 'yrz',
+  5 => 'wrz',
+  6 => 'wzf',
+  7 => 'money',
+  8 => 'cjdingdan',
+  9 => 'dingdan',
+  10 => 'user',
+  11 => 'ip',
+  12 => 'time',
+  13 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=taobao;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hotel_order` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `uid` FROM `hotel_order` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hotel_order` WHERE  `oid` <> 0 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hotel_sumption` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hotel_sumption` WHERE  `yid` <> 0 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hotel_order` WHERE  `o_state` <> 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hotel_sumption` WHERE  `y_status` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT SUM(o_money) AS tp_sum FROM `hotel_order` WHERE  `o_state` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(y_money) AS tp_sum FROM `hotel_sumption` WHERE  `y_status` = 1 LIMIT 1 [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hotel_order` WHERE  `o_state` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hotel_order` WHERE  `ru_time` >= 1519654074 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hotel_order` WHERE  `ru_time` <= 1519654074 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hotel_sumption` WHERE  `y_status` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hotel_sumption` WHERE  `y_status` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hotel_menu` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `hotel_menu` WHERE  `m_time` >= 1518358074 LIMIT 1 [ RunTime:0.022001s ]
+---------------------------------------------------------------
+[ 2018-02-26T22:07:54+08:00 ] ::1 ::1 GET /admin/Index/admin/assets/js/jquery.min.js
+[ info ] www.test.com/admin/Index/admin/assets/js/jquery.min.js [运行时间：0.068003s][吞吐率：14.71req/s] [内存消耗：3,187.71kb] [文件加载：50]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.test.com/admin/Index/home.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=7bsnbjas4u1net9oe1eq47pmm1; hzy_login_back=http://www.test.com/index/Contact/contact.html',
+)
+[ info ] [ PARAM ] array (
+  'assets' => 'js',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->admin[ C:\wamp\www\tp\hotel\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: aid[C:\wamp\www\tp\hotel\application\admin\controller\Index.php:92]
+---------------------------------------------------------------
+[ 2018-02-26T22:07:56+08:00 ] ::1 ::1 GET /admin/System/systems
+[ info ] www.test.com/admin/System/systems [运行时间：0.056003s][吞吐率：17.86req/s] [内存消耗：2,210.80kb] [文件加载：42]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'System',
+    2 => 'systems',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.test.com/admin/Index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=7bsnbjas4u1net9oe1eq47pmm1; hzy_login_back=http://www.test.com/index/Contact/contact.html',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\System->systems[ C:\wamp\www\tp\hotel\application\admin\controller\System.php ]
+[ info ] [ VIEW ] C:\wamp\www\tp\hotel\public/../application/admin\view\system\systems.html [ array (
+  0 => 'beian',
+  1 => 'name',
+  2 => 'content',
+  3 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-26T22:07:56+08:00 ] ::1 ::1 GET /admin/System/systemSection
+[ info ] www.test.com/admin/System/systemSection [运行时间：0.054003s][吞吐率：18.52req/s] [内存消耗：2,223.00kb] [文件加载：42]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'System',
+    2 => 'systemSection',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.test.com/admin/Index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=7bsnbjas4u1net9oe1eq47pmm1; hzy_login_back=http://www.test.com/index/Contact/contact.html',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\System->systemSection[ C:\wamp\www\tp\hotel\application\admin\controller\System.php ]
+[ info ] [ VIEW ] C:\wamp\www\tp\hotel\public/../application/admin\view\system\systemsection.html [ array (
+  0 => 'time',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-26T22:07:57+08:00 ] ::1 ::1 GET /admin/System/systemLogs
+[ info ] www.test.com/admin/System/systemLogs [运行时间：0.163010s][吞吐率：6.13req/s] [内存消耗：3,241.66kb] [文件加载：49]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'System',
+    2 => 'systemLogs',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.test.com/admin/Index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=7bsnbjas4u1net9oe1eq47pmm1; hzy_login_back=http://www.test.com/index/Contact/contact.html',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\System->systemLogs[ C:\wamp\www\tp\hotel\application\admin\controller\System.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp\www\tp\hotel\public/../application/admin\view\system\systemlogs.html [ array (
+  0 => 'res',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=taobao;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hotel_admininfo` [ RunTime:0.043003s ]
+[ sql ] [ SQL ] SELECT * FROM `hotel_admininfo` `i`,`hotel_admin` `a` WHERE  `iid` <> 0  AND (  i.aid=a.aid ) [ RunTime:0.030002s ]
+---------------------------------------------------------------
+[ 2018-02-26T22:07:58+08:00 ] ::1 ::1 GET /admin/System/systems
+[ info ] www.test.com/admin/System/systems [运行时间：0.046003s][吞吐率：21.74req/s] [内存消耗：2,053.27kb] [文件加载：40]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'System',
+    2 => 'systems',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.test.com/admin/Index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=7bsnbjas4u1net9oe1eq47pmm1; hzy_login_back=http://www.test.com/index/Contact/contact.html',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\System->systems[ C:\wamp\www\tp\hotel\application\admin\controller\System.php ]
+[ info ] [ VIEW ] C:\wamp\www\tp\hotel\public/../application/admin\view\system\systems.html [ array (
+  0 => 'beian',
+  1 => 'name',
+  2 => 'content',
+  3 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-26T22:07:58+08:00 ] ::1 ::1 GET /admin/System/systemSection
+[ info ] www.test.com/admin/System/systemSection [运行时间：0.054003s][吞吐率：18.52req/s] [内存消耗：2,053.48kb] [文件加载：40]
+[ info ] [ LANG ] C:\wamp\www\tp\hotel\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'System',
+    2 => 'systemSection',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.test.com/admin/Index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=7bsnbjas4u1net9oe1eq47pmm1; hzy_login_back=http://www.test.com/index/Contact/contact.html',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\System->systemSection[ C:\wamp\www\tp\hotel\application\admin\controller\System.php ]
+[ info ] [ VIEW ] C:\wamp\www\tp\hotel\public/../application/admin\view\system\systemsection.html [ array (
+  0 => 'time',
+) ]
+[ info ] [ LOG ] INIT File
