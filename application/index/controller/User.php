@@ -157,8 +157,42 @@ class User extends controller
 
 		$open = new open51094();
 		$code = $_GET['code'];
-        $this->assign('code',$code);
-		var_dump( $open->me($code) );
+		$log = $open->me($code);
+
+        $this->assign('log',$log);
+
+
+		$user = UserModel::get(['username'=>$log['uniq']]);
+		if (empty($user))
+		{
+			if ($_SERVER['REMOTE_ADDR']=='::1') {
+				$data['uip'] = ip2long('127.0.0.1');
+			} else {
+				$data['uip'] = ip2long($_SERVER['REMOTE_ADDR']);
+			}
+			$data['username'] = $log['uniq'];
+			$data['password'] = md5('3rdlogin');
+			$data['picture'] = $log['img'];
+			$data['realyname'] = $log['name'];		
+
+			$result = UserModel::create($data);
+
+			if ($result) {
+				$arr = $result->toArray();
+				$uid = $arr['id'];
+				Session::set('uid',$uid);
+				Session::set('username',$data['username']);
+			}
+		}
+		else
+		{
+			Session::set('uid',$user['id']);
+			Session::set('username',$user['username']);
+		}
+
+
+
+
         return $this->fetch();
 	}
 
