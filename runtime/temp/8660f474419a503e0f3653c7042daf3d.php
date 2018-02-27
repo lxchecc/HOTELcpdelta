@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:72:"E:\wamp64\www\git\hotel\public/../application/index\view\user\login.html";i:1519606027;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:72:"E:\wamp64\www\git\hotel\public/../application/index\view\user\login.html";i:1519696052;}*/ ?>
 <!doctype html>
 <html>
 <head>
@@ -274,10 +274,14 @@ addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); func
 		}else if(data ==6){
 			alert('密码不能为空');
 		}else if(data ==7){
-			window.location.href="/index/index/index";
+			alert('试试啊');
+			//window.location.href="/index/index/index";
 		}else if(data ==8){
 			alert('可用用户名,可以注册');
 		}
+		else
+			alert(data);
+
     }
 </script>
 

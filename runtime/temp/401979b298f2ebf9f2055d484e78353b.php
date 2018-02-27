@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"E:\wamp64\www\git\hotel\public/../application/index\view\index\index.html";i:1519609597;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"E:\wamp64\www\git\hotel\public/../application/index\view\index\index.html";i:1519695671;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -276,7 +276,6 @@
 							<div class="clearfix"></div>
 					</div>
 				</div>
-			</div>
 
 			
 		</div>
@@ -444,6 +443,6 @@ function cong()
             var message=$("#message").val();  
             console.log(ws.send(message));  
         })  
-    })  
+    })
 </script>
 </html>
