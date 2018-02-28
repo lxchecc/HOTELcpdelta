@@ -7,7 +7,7 @@ class News extends Model
 {
 	public function newselect()
 	{
-		return Db::table("hotel_evaluate e,hotel_user u")->where('e.uid=u.id')->select();
+		return Db::table("hotel_evaluate e,hotel_user u")->where('e.eid=u.id')->select();
 	}
 	public function delnew($id)
 	{

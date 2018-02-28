@@ -148,6 +148,22 @@ class User extends controller
         $this->assign('room',$room);
         return $this->fetch();
 	}
+	public function luckydraw()
+	{
+		$uid = Session::get('uid');
+		$user = Db::name('user')->where('id',$uid)->find();
+		$this->assign('user',$user);
+		return $this->fetch();
+	}
+
+	//中奖加钱
+	public function zhong()
+	{
+		$uid = Session::get('uid');
+		$result = db::name('user')->where('id',$uid)->find();
+		$newMoney = $result['u_money'] + $_POST['money'];
+		Db::name('user')->where('id',$uid)->update(['u_money'=>"$newMoney"]);
+	}
 
 	public function log3rd()
 	{

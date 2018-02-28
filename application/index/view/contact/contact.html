@@ -110,13 +110,13 @@
 					</div>
 					<div class="col-md-8 contact-left cont">
 						<h4>需求留言表</h4>
-						<form action="#" method="post">
-							<input type="text" name="Name" value="姓名" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
-							<input type="email" name="Email" value="邮箱" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
-							<input type="text" name="Phone" value="电话" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}" required="">
-							<textarea type="text" name="Message"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">您的需求可以写在这里</textarea>
-							<input type="submit" value="提交" >
-							<input type="reset" value="清除" >
+						<form id="review">
+							<input type="text" name="Name" value="姓名" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '请补全姓名';}" required="">
+							<input type="email" name="Email" value="邮箱" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '请补全邮箱';}" required="">
+							<input type="text" name="Phone" value="电话" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '请补全电话';}" required="">
+							<textarea type="text" name="Message"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '请补全您的信息';}" required="">您的需求可以写在这里</textarea>
+							<input type="submit" class="sub" value="提交" >
+							<input type="reset" class="res" value="清除" >
 						</form>
 					</div>
 					<div class="clearfix"> </div>
@@ -311,6 +311,30 @@
 	marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
 	map.enableScrollWheelZoom();   //启用滚轮放大缩小，默认禁用
 	map.enableContinuousZoom();    //启用地图惯性拖拽，默认禁用
+</script>
+<script type="text/javascript">
+$('#review .sub').on('click' ,function(){
+		 $.ajax({
+                "type":"post",
+                "url":"/index/Contact/review",
+                "dataType":"json",
+                "data":{
+                "name":$("#review input[name=Name]").val(),
+                "email":$('#review input[name=Email]').val(),
+                "phone":$('#review input[name=Phone]').val(),
+                "message":$('#review textarea[name=Message]').val()
+                },
+                "success":function(data){
+                	if(data == 0){
+                		alert('您好，您的留言已发送，接下来请等待电话联系');
+                	}else if(data == 1){
+                		alert('您好，数据库发生错误，留言暂时无法发送');
+                	}else if(data == 2){
+                		alert('您好，您填写的个人信息有误');
+                	}
+                }
+            });
+});
 </script>
 <script type="text/javascript">
 	$(function(){
