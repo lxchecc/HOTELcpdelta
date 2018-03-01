@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:77:"E:\wamp64\www\git\hotel\public/../application/index\view\destine\destine.html";i:1519867553;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -52,18 +53,15 @@
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav">
 							
-							{if empty($Think.session.username)}
-							{else}
+							<?php if(empty(\think\Session::get('username'))): else: ?>
 							<li><a href="/index/User/userInfo">
 								尊敬的用户 
-								{if !empty($user['realyname'])}
-									{$user['realyname']}
-								{else}
-									{$user['username']}
-								{/if}
+								<?php if(!empty($user['realyname'])): ?>
+									<?php echo $user['realyname']; else: ?>
+									<?php echo $user['username']; endif; ?>
 								</a>
 							</li>
-							{/if}
+							<?php endif; ?>
 							<li class="active"><a href="/index/index/index" data-hover="Home">首页</a></li>
 							<li><a href="/index/Meal/meal" data-hover="About">房间餐</a></li>
 							<li><a data-hover="Restaurant" href="/index/Restaurant/restaurant">餐厅</a></li>
@@ -71,12 +69,12 @@
 							<li><a data-hover="Rooms" href="/index/Rooms/rooms">房间</a></li>
 							<li><a  href="/index/Destine/destine" data-hover="codes">预定</a></li>
 							<li><a data-hover="Contact" href="/index/Contact/contact.html">留言</a></li>
-							{if empty($Think.session.username)}
+							<?php if(empty(\think\Session::get('username'))): ?>
 							<li><a href="/index/User/login">登录/注册</a></li>
-							{else}
+							<?php else: ?>
 
 							<li><a href="/index/User/loginOut">退出</a></li>
-							{/if}
+							<?php endif; ?>
 						  </ul>
 						</div><!-- /.navbar-collapse -->
 					</div><!-- /.container-fluid -->
@@ -135,18 +133,16 @@
 					  </thead>
 					  <tbody>
 
-					  {foreach $che as $val}
-					  {if $val.status == 0}
+					  <?php foreach($che as $val): if($val['status'] == 0): ?>
 						<tr>
-						  <th scope="row">{$val.mid}</th>
-						  <td>{$val.m_name}</td>
-						  <td><img width="30px" height="30px" src="{$val.m_picture}"></td>
-						  <td style="color:red">￥{$val.m_money}</td>
-						  <td><button type="button" class="btn btn-lg btn-success" style="font-size:12px" onclick="addCai({$val.mcid})">点击付款</button></td>
-						  <td><button type="button" class="btn btn-lg btn-danger" style="font-size:12px" onclick="yichu({$val.mcid})">移除菜单</button></td>
+						  <th scope="row"><?php echo $val['mid']; ?></th>
+						  <td><?php echo $val['m_name']; ?></td>
+						  <td><img width="30px" height="30px" src="<?php echo $val['m_picture']; ?>"></td>
+						  <td style="color:red">￥<?php echo $val['m_money']; ?></td>
+						  <td><button type="button" class="btn btn-lg btn-success" style="font-size:12px" onclick="addCai(<?php echo $val['mcid']; ?>)">点击付款</button></td>
+						  <td><button type="button" class="btn btn-lg btn-danger" style="font-size:12px" onclick="yichu(<?php echo $val['mcid']; ?>)">移除菜单</button></td>
 						</tr>
-						{/if}
-						{/foreach}
+						<?php endif; endforeach; ?>
 					  </tbody>
 					</table>
 				</div>
@@ -171,20 +167,18 @@
 						</tr>
 					  </thead>
 					  <tbody>
-					  	{foreach $ord as $value}
-					  	{if $value.o_state == 2}
+					  	<?php foreach($ord as $value): if($value['o_state'] == 2): ?>
 						<tr>
-						  <th scope="row">{$value.roomid}</th>
-						  <td>{$value.roomtype}</td>
-						  <td><img width="30px" height="30px" src="{$value.r_picture}"/></td>
-						  <td style="color:red">￥{$value.o_money}</td>
+						  <th scope="row"><?php echo $value['roomid']; ?></th>
+						  <td><?php echo $value['roomtype']; ?></td>
+						  <td><img width="30px" height="30px" src="<?php echo $value['r_picture']; ?>"/></td>
+						  <td style="color:red">￥<?php echo $value['o_money']; ?></td>
 						  <td><?php echo date('Y-m-d' , $value['ru_time']) ?></td>
 						  <td><?php echo date('Y-m-d' , $value['tui_time']) ?></td>
-						  <td><button type="button" class="btn btn-lg btn-success" style="font-size:12px" onclick="addroom({$value.oid})">点击付款</button></td>
-						  <td><button type="button" class="btn btn-lg btn-danger" style="font-size:12px" onclick="yichu({$value.oid})">取消订单</button></td>
+						  <td><button type="button" class="btn btn-lg btn-success" style="font-size:12px" onclick="addroom(<?php echo $value['oid']; ?>)">点击付款</button></td>
+						  <td><button type="button" class="btn btn-lg btn-danger" style="font-size:12px" onclick="yichu(<?php echo $value['oid']; ?>)">取消订单</button></td>
 						</tr>
-						{/if}
-						{/foreach}
+						<?php endif; endforeach; ?>
 					  </tbody>
 					</table>
 					
@@ -211,20 +205,18 @@
 						</tr>
 					  </thead>
 					  <tbody>
-					  	{foreach $sum as $value}
-					  	{if $value.y_status == 0}
+					  	<?php foreach($sum as $value): if($value['y_status'] == 0): ?>
 						<tr>
-						  <th scope="row">{$value.c_seat}</th>
-						  <td>{$value.c_type}</td>
-						  <td><img width="30px" height="30px" src="{$value.c_picture}"/></td>
-						  <td style="color:red">￥{$value.y_money}</td>
+						  <th scope="row"><?php echo $value['c_seat']; ?></th>
+						  <td><?php echo $value['c_type']; ?></td>
+						  <td><img width="30px" height="30px" src="<?php echo $value['c_picture']; ?>"/></td>
+						  <td style="color:red">￥<?php echo $value['y_money']; ?></td>
 						  <td><?php echo date('Y-m-d' , $value['ru_time']) ?></td>
 						  <td><?php echo date('Y-m-d' , $value['tui_time']) ?></td>
-						  <td><button type="button" class="btn btn-lg btn-success" style="font-size:12px" onclick="addrest({$value.yid})">点击付款</button></td>
-						  <td><button type="button" class="btn btn-lg btn-danger" style="font-size:12px" onclick="yichu({$value.yid})">取消订单</button></td>
+						  <td><button type="button" class="btn btn-lg btn-success" style="font-size:12px" onclick="addrest(<?php echo $value['yid']; ?>)">点击付款</button></td>
+						  <td><button type="button" class="btn btn-lg btn-danger" style="font-size:12px" onclick="yichu(<?php echo $value['yid']; ?>)">取消订单</button></td>
 						</tr>
-						{/if}
-						{/foreach}
+						<?php endif; endforeach; ?>
 					  </tbody>
 					</table>
 					
@@ -248,26 +240,24 @@
 						</tr>
 					  </thead>
 					  <tbody>
-						{foreach $che as $val}
-						{if $val.status == 1}
+						<?php foreach($che as $val): if($val['status'] == 1): ?>
 						<tr>
-						  <th scope="row">{$val.mid}</th>
-						  <td>{$val.m_name}</td>
-						  <td><img width="30px" height="30px" src="{$val.m_picture}"></td>
-						  <td style="color:red">￥{$val.m_money}</td>
+						  <th scope="row"><?php echo $val['mid']; ?></th>
+						  <td><?php echo $val['m_name']; ?></td>
+						  <td><img width="30px" height="30px" src="<?php echo $val['m_picture']; ?>"></td>
+						  <td style="color:red">￥<?php echo $val['m_money']; ?></td>
 						  <td><button type="button" class="btn btn-lg btn-success" style="font-size:12px">付款成功</button></td>
-						  {if $val.m_refund == 0}
-						  <td><button type="button" class="btn btn-lg btn-danger" style="font-size:12px" onclick="refund({$val.mcid})">申请退款</button></td>
-						  {elseif($val.m_refund == 1)}
+						  <?php if($val['m_refund'] == 0): ?>
+						  <td><button type="button" class="btn btn-lg btn-danger" style="font-size:12px" onclick="refund(<?php echo $val['mcid']; ?>)">申请退款</button></td>
+						  <?php elseif(($val['m_refund'] == 1)): ?>
 						  <td><button type="button" class="btn btn-lg btn-warning" style="font-size:12px">等待审核</button></td>
-						  {elseif($val.m_refund == 2)}
+						  <?php elseif(($val['m_refund'] == 2)): ?>
 						  <td><button type="button" class="btn btn-lg btn-info" style="font-size:12px">审核通过</button></td>
-						  {elseif($val.m_refund == 3)}
+						  <?php elseif(($val['m_refund'] == 3)): ?>
 						  <td><button type="button" class="btn btn-lg btn-danger" style="font-size:12px">审核未通过</button></td>
-						  {/if}
+						  <?php endif; ?>
 						</tr>
-						{/if}
-						{/foreach}
+						<?php endif; endforeach; ?>
 					  </tbody>
 
 					</table>
@@ -293,28 +283,26 @@
 						</tr>
 					  </thead>
 					  <tbody>
-					  	{foreach $ord as $value}
-					  	{if $value.o_state == 1}
+					  	<?php foreach($ord as $value): if($value['o_state'] == 1): ?>
 						<tr>
-						  <th scope="row">{$value.roomid}</th>
-						  <td>{$value.roomtype}</td>
-						  <td><img width="30px" height="30px" src="{$value.r_picture}"/></td>
-						  <td style="color:red">￥{$value.o_money}</td>
+						  <th scope="row"><?php echo $value['roomid']; ?></th>
+						  <td><?php echo $value['roomtype']; ?></td>
+						  <td><img width="30px" height="30px" src="<?php echo $value['r_picture']; ?>"/></td>
+						  <td style="color:red">￥<?php echo $value['o_money']; ?></td>
 						  <td><?php echo date('Y-m-d' , $value['ru_time']) ?></td>
 						  <td><?php echo date('Y-m-d' , $value['tui_time']) ?></td>
 						  <td><button type="button" class="btn btn-lg btn-success" style="font-size:12px">付款成功</button></td>
-						  {if $value.o_refund == 0}
-						  <td><button type="button" class="btn btn-lg btn-danger" style="font-size:12px" onclick="refund({$value.oid})">申请退款</button></td>
-						  {elseif($value.o_refund == 1)}
+						  <?php if($value['o_refund'] == 0): ?>
+						  <td><button type="button" class="btn btn-lg btn-danger" style="font-size:12px" onclick="refund(<?php echo $value['oid']; ?>)">申请退款</button></td>
+						  <?php elseif(($value['o_refund'] == 1)): ?>
 						  <td><button type="button" class="btn btn-lg btn-warning" style="font-size:12px">等待审核</button></td>
-						  {elseif($value.o_refund == 2)}
+						  <?php elseif(($value['o_refund'] == 2)): ?>
 						  <td><button type="button" class="btn btn-lg btn-info" style="font-size:12px">审核通过</button></td>
-						  {elseif($value.o_refund == 3)}
+						  <?php elseif(($value['o_refund'] == 3)): ?>
 						  <td><button type="button" class="btn btn-lg btn-danger" style="font-size:12px">审核未通过</button></td>
-						  {/if}
+						  <?php endif; ?>
 						</tr>
-						{/if}
-						{/foreach}
+						<?php endif; endforeach; ?>
 					  </tbody>
 					</table>	
 				</div>
@@ -340,34 +328,32 @@
 						</tr>
 					  </thead>
 					  <tbody>
-					  	{foreach $sum as $value}
-					  	{if $value.y_status == 1}
+					  	<?php foreach($sum as $value): if($value['y_status'] == 1): ?>
 						<tr>
-						  <th scope="row">{$value.c_seat}</th>
-						  <td>{$value.c_type}</td>
-						  <td><img width="30px" height="30px" src="{$value.c_picture}"/></td>
-						  <td style="color:red">￥{$value.y_money}</td>
+						  <th scope="row"><?php echo $value['c_seat']; ?></th>
+						  <td><?php echo $value['c_type']; ?></td>
+						  <td><img width="30px" height="30px" src="<?php echo $value['c_picture']; ?>"/></td>
+						  <td style="color:red">￥<?php echo $value['y_money']; ?></td>
 						  <td><?php echo date('Y-m-d' , $value['ru_time']) ?></td>
 						  <td><?php echo date('Y-m-d' , $value['tui_time']) ?></td>
 						  <td><button type="button" class="btn btn-lg btn-success" style="font-size:12px">付款成功</button></td>
-						  {if $value.y_refund == 0}
-						  <td><button type="button" class="btn btn-lg btn-danger" style="font-size:12px" onclick="refund({$value.yid})">申请退款</button></td>
-						  {elseif($value.y_refund == 1)}
+						  <?php if($value['y_refund'] == 0): ?>
+						  <td><button type="button" class="btn btn-lg btn-danger" style="font-size:12px" onclick="refund(<?php echo $value['yid']; ?>)">申请退款</button></td>
+						  <?php elseif(($value['y_refund'] == 1)): ?>
 						  <td><button type="button" class="btn btn-lg btn-warning" style="font-size:12px">等待审核</button></td>
-						  {elseif($value.y_refund == 2)}
+						  <?php elseif(($value['y_refund'] == 2)): ?>
 						  <td><button type="button" class="btn btn-lg btn-info" style="font-size:12px">审核通过</button></td>
-						  {elseif($value.y_refund == 3)}
+						  <?php elseif(($value['y_refund'] == 3)): ?>
 						  <td><button type="button" class="btn btn-lg btn-danger" style="font-size:12px">审核未通过</button></td>
-						  {/if}
+						  <?php endif; ?>
 						</tr>
-						{/if}
-						{/foreach}
+						<?php endif; endforeach; ?>
 					  </tbody>
 					</table>	
 				</div>
 				
 			</div>
-				<div style="float:right;margin-right:200px;">总计:<span style="color:red;margin-left:20px;">{$num}</span>
+				<div style="float:right;margin-right:200px;">总计:<span style="color:red;margin-left:20px;"><?php echo $num; ?></span>
 				<button type="button" class="btn btn-lg btn-success" style="font-size:12px;margin-left:20px;" onclick="zong()">付款</button>
 				</div>
 

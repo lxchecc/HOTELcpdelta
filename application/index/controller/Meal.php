@@ -5,6 +5,7 @@ use app\index\model\Menuche;
 use think\Controller;
 use think\Request;
 use think\Db;
+use think\Session;
 
 class Meal extends Controller
 {
@@ -15,7 +16,11 @@ class Meal extends Controller
     	$list = Menu::paginate(8,1000);
     	$this->assign('list',$list);
     	//$this->assign('meal',$meal);
-    	return $this->fetch();
+        $uid = Session::get('uid');
+        $user = Db::name('user')->where('id',$uid)->find();
+        $this->assign('user',$user);    	
+        return $this->fetch();
+
     }
     //添加到菜单
     public function addMeal(Request $request)

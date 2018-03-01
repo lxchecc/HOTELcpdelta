@@ -16,6 +16,9 @@ class Rooms extends Controller
 		$list = Db::name('room')->where('status',0)->paginate(4,100000);
 		$room = Db::name('room')->group('roomtype')->select();
 		//dump($room);die;
+        $uid = Session::get('uid');
+        $user = Db::name('user')->where('id',$uid)->find();
+        $this->assign('user',$user);		
 		$this->assign('room',$room);
 		$this->assign('list',$list);
 		return $this->fetch();

@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:79:"E:\wamp64\www\git\hotel\public/../application/index\view\describe\describe.html";i:1519867622;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -43,35 +44,21 @@
 							<span class="icon-bar"></span>
 						  </button>
 						  <div class="navbar-brand logo">
-								<h1><a href="index.html"><span></span> </a></h1>
+								<h1><a href="index.html"><span> </span></a></h1>
 							</div>
 						</div>
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-						   <!-- <ul class="nav navbar-nav">
-							<li><a href="index.html" data-hover="Home">Home </a></li>
-							<li><a href="about.html" data-hover="About">About</a></li>
-							<li><a data-hover="Restaurant" href="restaurant.html">Restaurant</a></li>
-							<li class="active"><a data-hover="Gallery" href="gallery.html">Gallery</a></li>
-							<li><a data-hover="Rooms" href="rooms.html">Rooms</a></li>
-							  <li><a  href="codes.html" data-hover="codes">Codes</a></li>
-							 <li><a data-hover="Contact" href="contact.html">Contact</a></li>
-							 
-						  </ul> -->
 							<ul class="nav navbar-nav">
-							
-							{if empty($Think.session.username)}
-							{else}
+							<?php if(empty(\think\Session::get('username'))): else: ?>
 							<li><a href="/index/User/userInfo">
 								尊敬的用户 
-								{if !empty($user['realyname'])}
-									{$user['realyname']}
-								{else}
-									{$user['username']}
-								{/if}
+								<?php if(!empty($user['realyname'])): ?>
+									<?php echo $user['realyname']; else: ?>
+									<?php echo $user['username']; endif; ?>
 								</a>
 							</li>
-							{/if}
+							<?php endif; ?>
 							<li class="active"><a href="/index/index/index" data-hover="Home">首页</a></li>
 							<li><a href="/index/Meal/meal" data-hover="About">房间餐</a></li>
 							<li><a data-hover="Restaurant" href="/index/Restaurant/restaurant">餐厅</a></li>
@@ -79,12 +66,12 @@
 							<li><a data-hover="Rooms" href="/index/Rooms/rooms">房间</a></li>
 							<li><a  href="/index/Destine/destine" data-hover="codes">预定</a></li>
 							<li><a data-hover="Contact" href="/index/Contact/contact.html">留言</a></li>
-							{if empty($Think.session.username)}
+							<?php if(empty(\think\Session::get('username'))): ?>
 							<li><a href="/index/User/login">登录/注册</a></li>
-							{else}
+							<?php else: ?>
 
 							<li><a href="/index/User/loginOut">退出</a></li>
-							{/if}
+							<?php endif; ?>
 						  </ul>
 						</div><!-- /.navbar-collapse -->
 					</div><!-- /.container-fluid -->
@@ -95,7 +82,81 @@
 	</div>
 		<!---header--->		
 		<div class="content">
-		
+	
+	<!--header-->		
+		<div class="content">
+			<div class="about-section">
+				<div class="container">
+					<h2 class="tittle">关于我们</h2>
+					<div class="about-grids">
+						<div class="col-md-4 about-grid">
+							<h4>酒店历史</h4>
+							<p>1952年，企业家繁斌·威尔逊在美国田纳西州孟菲斯开设了第一家假日酒店。</p>
+							<p>1988年，巴斯集团收购了假日酒店，开始进军酒店业。假日酒店作为业内第一个进行全球性发展的品牌，同时也为整个酒店行业奠定了一系列全新基准。</p>
+							<p>1984年，第一家假日酒店在北京开业，洲际酒店集团 (IHG)成为最早进入中国的国际酒店集团之一。</p>
+							<p>1998年，巴斯集团收购了洲际酒店品牌，将这一豪华品牌纳入集团旗下。</p>
+							<p>2000年，巴斯集团出售酿酒业务，公司更名为六洲酒店集团（Six Continents PLC），确立了其专注于酒店业的发展。</p>
+							<p>2003年，六洲酒店集团正式更名为洲际酒店集团。</p>
+							<p>2017年，大中华区成为独立业务单位，直接向集团伦敦总部汇报。
+								</p>
+						</div>
+						<div class="col-md-8 about-grid">
+							<div class="about-top">
+								<div class="col-md-6 about-left">
+									<div class="about-img">
+										<img src="/index/images/s.jpg" class="img-responsive gray" alt=""/>
+									</div>
+								</div>
+								<div class="col-md-6 about-right">
+									<div class="about-img">
+										<img src="/index/images/ga1.jpg" class="img-responsive gray" alt=""/>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="about-top1">
+								<div class="col-md-6 about-left">
+									<div class="about-img">
+										<img src="/index/images/ga2.jpg" class="img-responsive gray" alt=""/>
+									</div>
+								</div>
+								<div class="col-md-6 about-right">
+									<div class="about-img">
+										<img src="/index/images/ga7.jpg" class="img-responsive gray" alt=""/>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>	
+			<div class="statistics">
+				<div class="container">
+					<h3 class="tittle1">酒店当前状态</h3>
+					<div class="statistics-grids">
+						<div class="col-md-3 statistics-grid">
+							<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='190' data-delay='.5' data-increment="100"><?php echo $roomNum; ?></div>
+							<h5>剩余房间数</h5>
+						</div>
+						<div class="col-md-3 statistics-grid">
+							<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='372' data-delay='.5' data-increment="100"><?php echo $restNum; ?></div>
+							<h5>剩余客厅数</h5>
+						</div>
+						<div class="col-md-3 statistics-grid">
+							<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='10520' data-delay='.5' data-increment="100"><?php echo $caiNum; ?></div>
+							<h5>菜品总数</h5>
+						</div>
+						<div class="col-md-3 statistics-grid">
+							<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='256' data-delay='.5' data-increment="100"><?php echo $userNum; ?></div>
+							<h5>用户</h5>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div> 
+
 <!-- gallery -->
 <div class="gallery">
 	<div class="container">
@@ -392,7 +453,7 @@
 						</ul>
 					</div>
 					<div class="col-md-3 footer-grid">
-						<h4></h4>
+						<h4> </h4>
 						<ul>
 							<li></li>
 							<li></li>
@@ -421,4 +482,24 @@
 	<!--footer-->
 
 </body>
+<!-- <script type="text/javascript">
+	window.onload = window.onscroll = function () {
+		var aImage = document.getElementsByTagName('img');
+		/*console.log(aImage);*/
+		//获取可视区域的高度
+		var height = document.body.clientHeight;
+		/*console.log(height);*/
+		//得到卷起的高度
+		var scrollTop = document.body.scrollTop;
+		console.log(scrollTop);
+		console.log(aImage[1].offsetTop);
+		for (var i = 0; i < aImage.length; i++) {
+			var top = aImage[i].offsetTop;
+			if (top <= height + scrollTop) {
+				aImage[i].src = aImage[i].getAttribute('_src');
+			}
+		}
+	};
+//瀑布流
+</script> -->
 </html>

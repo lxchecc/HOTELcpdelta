@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:75:"E:\wamp64\www\git\hotel\public/../application/index\view\user\userinfo.html";i:1519695671;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:75:"E:\wamp64\www\git\hotel\public/../application/index\view\user\userinfo.html";i:1519867508;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -74,9 +74,15 @@
 						  <ul class="nav navbar-nav">
 							
 							<?php if(empty(\think\Session::get('username'))): else: ?>
-							<li><a href="/index/User/userInfo">尊敬的用户 <?php echo $user['username']; ?></a></li>
-
+							<li><a href="/index/User/userInfo">
+								尊敬的用户 
+								<?php if(!empty($user['realyname'])): ?>
+									<?php echo $user['realyname']; else: ?>
+									<?php echo $user['username']; endif; ?>
+								</a>
+							</li>
 							<?php endif; ?>
+							
 							<li class="active"><a href="/index/index/index" data-hover="Home">首页</a></li>
 							<li><a href="/index/Meal/meal" data-hover="About">房间餐</a></li>
 							<li><a data-hover="Restaurant" href="/index/Restaurant/restaurant">餐厅</a></li>
@@ -175,6 +181,10 @@
 					</div>
 				</div>
 			</div>
+		</div>
+		<div class="luckydraw">
+			<h3 class="tittle">消费之前抽大奖</h3>
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="/index/User/luckydraw"><img src="/index/images/paoma2.gif"></a>
 		</div>
 
 		<div class="footer-section">

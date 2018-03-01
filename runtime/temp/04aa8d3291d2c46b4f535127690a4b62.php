@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"E:\wamp64\www\git\hotel\public/../application/index\view\rooms\rooms.html";i:1519867577;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -50,18 +51,15 @@
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav">
 							
-							{if empty($Think.session.username)}
-							{else}
+							<?php if(empty(\think\Session::get('username'))): else: ?>
 							<li><a href="/index/User/userInfo">
 								尊敬的用户 
-								{if !empty($user['realyname'])}
-									{$user['realyname']}
-								{else}
-									{$user['username']}
-								{/if}
+								<?php if(!empty($user['realyname'])): ?>
+									<?php echo $user['realyname']; else: ?>
+									<?php echo $user['username']; endif; ?>
 								</a>
 							</li>
-							{/if}
+							<?php endif; ?>
 							<li class="active"><a href="/index/index/index" data-hover="Home">首页</a></li>
 							<li><a href="/index/Meal/meal" data-hover="About">房间餐</a></li>
 							<li><a data-hover="Restaurant" href="/index/Restaurant/restaurant">餐厅</a></li>
@@ -69,12 +67,12 @@
 							<li><a data-hover="Rooms" href="/index/Rooms/rooms">房间</a></li>
 							<li><a  href="/index/Destine/destine" data-hover="codes">预定</a></li>
 							<li><a data-hover="Contact" href="/index/Contact/contact.html">留言</a></li>
-							{if empty($Think.session.username)}
+							<?php if(empty(\think\Session::get('username'))): ?>
 							<li><a href="/index/User/login">登录/注册</a></li>
-							{else}
+							<?php else: ?>
 
 							<li><a href="/index/User/loginOut">退出</a></li>
-							{/if}
+							<?php endif; ?>
 						  </ul>
 						</div><!-- /.navbar-collapse -->
 					</div><!-- /.container-fluid -->
@@ -91,27 +89,27 @@
 					<h2 class="tittle">预订房间</h2>
 						<p class="wel text">本酒店的房间种类丰富，定价合理。满足您中高低的各种需求，希望您能找到适合您的房间，祝您选房愉快。</p>
 					<div class="wel-grids">
-						{volist name="list" id="value"}
+						<?php if(is_array($list) || $list instanceof \think\Collection || $list instanceof \think\Paginator): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$value): $mod = ($i % 2 );++$i;?>
 						<div class="col-md-3 wel-grid">
-							<img src="{$value.r_picture}" class="img-responsive gray" alt=""/>
-							<h4>{$value.roomid}</h4>
-							{if $value.roomtype == 1}
+							<img src="<?php echo $value['r_picture']; ?>" class="img-responsive gray" alt=""/>
+							<h4><?php echo $value['roomid']; ?></h4>
+							<?php if($value['roomtype'] == 1): ?>
 							<p>普通客房</p>
-							{elseif($value.roomtype == 2)}
+							<?php elseif(($value['roomtype'] == 2)): ?>
 							<p>标准客房</p>
-							{elseif($value.roomtype == 3)}
+							<?php elseif(($value['roomtype'] == 3)): ?>
 							<p>高级套房</p>
-							{elseif($value.roomtype == 4)}
+							<?php elseif(($value['roomtype'] == 4)): ?>
 							<p>豪华套房</p>
-							{elseif($value.roomtype == 5)}
+							<?php elseif(($value['roomtype'] == 5)): ?>
 							<p>总理套房</p>
-							{/if}
+							<?php endif; ?>
 						</div>
-						{/volist}
+						<?php endforeach; endif; else: echo "" ;endif; ?>
 						<!-- <div class="clearfix"></div> -->
 					</div>
 				</div>
-				<div style="text-align:center">{$list}</div>
+				<div style="text-align:center"><?php echo $list; ?></div>
 			</div>
 
 			<!--Rooms-->
@@ -179,28 +177,28 @@
 			<div class="rooms-rates">
 				<div class="container">
 					<h3 class="tittle">房间介绍</h3>
-					{foreach $room as $roomlist}
+					<?php foreach($room as $roomlist): ?>
 					<div class="rates-grids">
 						<div class="rates-grid">
-							<img src="{$roomlist.r_picture}" class="img-responsive gray" alt=""/>
+							<img src="<?php echo $roomlist['r_picture']; ?>" class="img-responsive gray" alt=""/>
 						</div>
 						<div class="rates-text">
-							{if $roomlist['roomtype'] == 1}
+							<?php if($roomlist['roomtype'] == 1): ?>
 							<p>普通客房</p>
-							{elseif($roomlist.roomtype == 2)}
+							<?php elseif(($roomlist['roomtype'] == 2)): ?>
 							<p>标准客房</p>
-							{elseif($roomlist.roomtype == 3)}
+							<?php elseif(($roomlist['roomtype'] == 3)): ?>
 							<p>高级套房</p>
-							{elseif($roomlist.roomtype == 4)}
+							<?php elseif(($roomlist['roomtype'] == 4)): ?>
 							<p>豪华套房</p>
-							{elseif($roomlist.roomtype == 5)}
+							<?php elseif(($roomlist['roomtype'] == 5)): ?>
 							<p>总理套房</p>
-							{/if}
-							<p>{$roomlist.room_content}</p>
-							<h5>￥{$roomlist.roomprice}<span class="small">/ Night</span></h5>
+							<?php endif; ?>
+							<p><?php echo $roomlist['room_content']; ?></p>
+							<h5>￥<?php echo $roomlist['roomprice']; ?><span class="small">/ Night</span></h5>
 						</div>
 					</div>
-					{/foreach}
+					<?php endforeach; ?>
 					<!-- 这里可以使用懒加载 -->
 					<!-- <div class="rates-grids rate1">
 						<div class="rates-grid1">

@@ -12,6 +12,9 @@ class Restaurant extends controller
 	//餐厅模板
 	public function restaurant()
 	{
+        $uid = Session::get('uid');
+        $user = Db::name('user')->where('id',$uid)->find();
+        $this->assign('user',$user);		
 		return $this->fetch();
 	}
 	//查询餐厅

@@ -28,6 +28,8 @@ class Destine extends Controller
 		$this->assign('sum',$sum);
 		$this->assign('ord',$ord);
 		$this->assign('che', $che);
+        $user = Db::name('user')->where('id',$uid)->find();
+        $this->assign('user',$user);	
 		return $this->fetch();
 	}
 	//统计总价

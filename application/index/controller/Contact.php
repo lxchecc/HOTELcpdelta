@@ -2,11 +2,15 @@
 namespace app\index\controller;
 use think\Controller;
 use think\Db;
+use think\Session;
 
 class Contact extends Controller
 {
 	public function contact()
 	{
+		$uid = Session::get('uid');
+        $user = Db::name('user')->where('id',$uid)->find();
+        $this->assign('user',$user);
 		return $this->fetch();
 	}
 

@@ -127,6 +127,12 @@ class Member extends controller
 	{
 		return $this->fetch();
 	}
+	public function powerlist()
+	{
+		$res = Db::table('hotel_adrole')->select();		
+		$this->assign('res',$res);
+		return $this->fetch();
+	}	
 	//管理员修改信息
 	public function upinfo()
 	{

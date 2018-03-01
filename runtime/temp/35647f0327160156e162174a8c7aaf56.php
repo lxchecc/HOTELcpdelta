@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"E:\wamp64\www\git\hotel\public/../application/admin\view\index\index.html";i:1519803130;}*/ ?>
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
 <head>
@@ -217,15 +218,13 @@ function link_operating(name,title){
 					<li class="light-blue">
 						<a data-toggle="dropdown" href="#" class="dropdown-toggle">
 							<span  class="time"><em id="time"></em></span><span class="user-info"><small>欢迎光临,</small>
-							{if isset($admintype)}
-							{if $admintype == 2}高级管理员{elseif $admintype==3}超级管理员{elseif $admintype==1}普通管理员{/if}
-							{/if}
+							<?php if(isset($admintype)): if($admintype == 2): ?>高级管理员<?php elseif($admintype==3): ?>超级管理员<?php elseif($admintype==1): ?>普通管理员<?php endif; endif; ?>
 							</span>
 							<i class="icon-caret-down"></i>
 						</a>
 						<ul class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
 							<li><a href="javascript:void(0" name="/admin/System/systems" title="系统设置" class="iframeurl"><i class="icon-cog"></i>网站设置</a></li>
-							<li><a href="javascript:void(0)" name="/admin/Member/admininfo?aid={$aid}" title="个人信息" class="iframeurl"><i class="icon-user"></i>个人资料</a></li>
+							<li><a href="javascript:void(0)" name="/admin/Member/admininfo?aid=<?php echo $aid; ?>" title="个人信息" class="iframeurl"><i class="icon-user"></i>个人资料</a></li>
 							<li class="divider"></li>
 							<li><a href="javascript:ovid(0)" id="Exit_system"><i class="icon-off"></i>退出</a></li>
 						</ul>
@@ -333,7 +332,7 @@ function link_operating(name,title){
 							<ul class="submenu">	
 								<li class="home"><a href="javascript:void(0)" name="/admin/Member/adminCompetence" title="权限管理"  class="iframeurl"><i class="icon-double-angle-right"></i>权限管理</a></li>
 								<li class="home"><a href="javascript:void(0)" name="/admin/Member/administrator" title="管理员列表" class="iframeurl"><i class="icon-double-angle-right"></i>管理员列表</a></li>
-								<li class="home"><a href="javascript:void(0)" name="/admin/Member/adminInfo?aid={$aid}" title="个人信息" class="iframeurl"><i class="icon-double-angle-right"></i>个人信息</a></li>
+								<li class="home"><a href="javascript:void(0)" name="/admin/Member/adminInfo?aid=<?php echo $aid; ?>" title="个人信息" class="iframeurl"><i class="icon-double-angle-right"></i>个人信息</a></li>
 								<li class="home"><a href="javascript:void(0)" name="/admin/Member/powerlist" title="权限列表"  class="iframeurl"><i class="icon-double-angle-right"></i>权限列表</a></li>
 
 							</ul>
