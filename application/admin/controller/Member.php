@@ -9,6 +9,8 @@ use app\admin\model\Member as MemberModel;
 class Member extends controller
 {
 	public $member;
+	public static $wuxiandata = [];
+	public static $num =1;
 	public function __construct()
 	{
 		parent::__construct();
@@ -130,9 +132,70 @@ class Member extends controller
 	public function powerlist()
 	{
 		$res = Db::table('hotel_adrole')->select();		
+		$this->wuxianji(0);	
+		$this->assign('test',self::$wuxiandata);	
 		$this->assign('res',$res);
 		return $this->fetch();
 	}	
+	public function roleadd()
+	{
+		$data['role_name'] = $_POST['rolename'];
+		$data['role_1'] = $_POST['rp1'];
+		$data['role_2'] = $_POST['rp2'];
+		$data['role_3'] = $_POST['rp3'];
+		$data['role_4'] = $_POST['rp4'];
+		$data['role_5'] = $_POST['rp5'];
+		$data['role_6'] = $_POST['rp6'];
+		$data['role_7'] = $_POST['rp7'];
+		$res = Db::table('hotel_adrole')->insert($data);
+		if (!empty($res)) return 1;
+	}
+	
+	public function wuxianjilist()
+	{
+		$res = Db::table('hotel_adrole')->select();		
+		$this->wuxianji(0);	
+		$this->assign('test',self::$wuxiandata);	
+		$this->assign('res',$res);
+		return $this->fetch();
+	}	
+	public function wuxianjidec()
+	{
+		$cid = $_POST['id'];
+		$res = Db::table('hotel_category')->where('cid',"$cid")->delete();
+		return 1;
+	}	
+
+	public function wuxianjiadd()
+	{
+		$data=[];
+		$cid = $_POST['id'];
+		$mys = Db::table('hotel_category')->where('cid',"$cid")->select();
+		$data['pid']=$cid;
+		$level = $mys[0]['level']+1;
+		$data['level']=$level;
+		$data['name']="$cid.号分类下的第.$level.级子分类";
+		$res = Db::table('hotel_category')->insert($data);
+		return 1;
+	}	
+
+	public function wuxianji($a)
+	{
+		$res = Db::table('hotel_category')->where('pid',"$a")->select();
+		$ans = [];
+		foreach ($res as $val)
+		{	
+			array_push(self::$wuxiandata,$val);
+			//var_dump($val);
+			self::$wuxiandata++;
+			$cid = $val['cid'];
+			$child = Db::table('hotel_category')->where('pid',"$cid")->select();
+			if (!empty($child)) {
+			$childdata = $this->wuxianji($cid);
+			array_push($ans,$childdata);
+			}
+		}
+	}
 	//管理员修改信息
 	public function upinfo()
 	{

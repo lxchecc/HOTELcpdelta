@@ -45,7 +45,6 @@ class Contact extends Controller
 			$phone = trim($_POST['phone']);
 		
 			$message = trim($_POST['message']);
-		
 			$result = Db::query("
 			insert into 'hotel_evaluate'('username','email','tel','content','type','e_time') values ($username, $email, $phone, $message, 1 , 159600000)");
 		if($result){

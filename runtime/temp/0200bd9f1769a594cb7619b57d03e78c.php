@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:77:"E:\wamp64\www\git\hotel\public/../application/index\view\contact\contact.html";i:1519867543;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:77:"E:\wamp64\www\git\hotel\public/../application/index\view\contact\contact.html";i:1519903428;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -330,6 +330,7 @@ $('#review .sub').on('click' ,function(){
                 "message":$('#review textarea[name=Message]').val()
                 },
                 "success":function(data){
+                	console.log(data);
                 	if(data == 0){
                 		alert('您好，您的留言已发送，接下来请等待电话联系');
                 	}else if(data == 1){

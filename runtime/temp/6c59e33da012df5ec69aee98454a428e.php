@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:78:"E:\wamp64\www\git\hotel\public/../application/admin\view\member\powerlist.html";i:1519866520;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:78:"E:\wamp64\www\git\hotel\public/../application/admin\view\member\powerlist.html";i:1519939984;}*/ ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -124,7 +124,7 @@
 							<i class="btn btn-xs fa fa-close bigger-120"></i>
                             <?php endif; ?>                
                         <td>
-    						<a href="#" id="role_edit" class="btn btn-warning" title="角色编辑"><i class="fa fa-120"></i> 编辑</a>
+    						<a href="javascript:ovid()" id="role_edit" class="btn btn-warning" title="角色编辑"><i class="fa fa-120"></i> 编辑</a>
 
 							
 		                </td>						                        
@@ -134,6 +134,7 @@
             </table>
             <div id="page"></div>
         </div>
+
        
         <script>
    /*添加管理员*/
@@ -141,15 +142,46 @@
 	layer.open({
 	  type: 1 //Page层类型
 	  ,area: ['300px', '500px']
-	  ,title: '你好，layer。'
+	  ,title: '增加角色'
 	  ,shade: 0.6 //遮罩透明度
 	  ,maxmin: true //允许全屏最小化
 	  ,anim: 1 //0-6的动画形式，-1不开启
-	  ,content: ' <form><div>&nbsp;&nbsp;&nbsp;角色名：<input type="text" id="rname"></input></div><br><div>&nbsp;产品权限：<input type="text" id="rp1"></input></div><br><div>&nbsp;交易权限：<input type="text" id="rp2"></input></div><br><div>&nbsp;会员权限：<input type="text" id="rp3"></input></div><br><div>&nbsp;消息权限：<input type="text" id="rp4"></input></div><br><div>&nbsp;文章权限：<input type="text" id="rp5"></input></div><br><div>&nbsp;系统权限：<input type="text" id="rp6"></input></div><br><div>&nbsp;管理权限：<input type="text" id="rp7"></input></div><br><button type="submit">提交</button></form>'
-	});    
+	  ,content: ' <div>&nbsp;&nbsp;&nbsp;角色名：<input type="text" id="rname"></input></div><br><div>&nbsp;产品权限：<input type="text" id="rp1"></input></div><br><div>&nbsp;交易权限：<input type="text" id="rp2"></input></div><br><div>&nbsp;会员权限：<input type="text" id="rp3"></input></div><br><div>&nbsp;消息权限：<input type="text" id="rp4"></input></div><br><div>&nbsp;文章权限：<input type="text" id="rp5"></input></div><br><div>&nbsp;系统权限：<input type="text" id="rp6"></input></div><br><div>&nbsp;管理权限：<input type="text" id="rp7"></input></div>'
+        ,btn:['保存','取消'],  
+        btn1: function (index,layero) {  
+          $.ajax({
+      "type":"post",
+      "url":"/admin/Member/roleadd",
+      "data":{
+        'rolename':$("#rname").val(),
+        'rp1':$("#rp1").val(),
+        'rp2':$("#rp2").val(),
+        'rp3':$("#rp3").val(),
+        'rp4':$("#rp4").val(),
+        'rp5':$("#rp5").val(),
+        "rp6":$("#rp6").val(),
+        'rp7':$("#rp7").val()
+      },
+      success:addrole
+    });
+          function addrole(data)
+     { 
+        console.log(data);
+        alert('成功');
+        layer.close(index);  
+                window.location.href="/admin/Member/powerlist";
+
+     }
+        },  
+        btn2:function (index,layero) {  
+             layer.close(index);  
+        }  	});  
+
+    function roleinfo()
+    {
   	$.ajax({
   		"type":"post",
-  		"url":"/admin/Member/administrator",
+  		"url":"/admin/Member/roleadd",
   		"data":{
   			'rolename':$("#rname").val(),
   			'rp1':$("#rp1").val(),
@@ -162,6 +194,12 @@
   		},
   		success:addrole
   	});
+          function addrole(data)
+     { 
+        console.log(data);
+        alert(data);
+     }
+    }
   	function addrole(data)
   	{	
   			console.log(data);
@@ -189,6 +227,7 @@
 		}
 		
 	});	
+    
 </script>
 
 </body>

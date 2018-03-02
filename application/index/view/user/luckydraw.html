@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>jQuery带中奖名单大转盘抽奖代码</title>
+<title>老铁来抽个奖呗</title>
 
 <link rel="stylesheet" href="/index/css/demo.css" type="text/css" />
 <link rel="stylesheet" type="text/css" href="/index/css/style3.css">
@@ -33,11 +33,29 @@ $(function (){
 			animateTo:angles+1800,
 			duration:8000,
 			callback:function (){
-				alert("￥"+txt);
+				$.ajax({
+    			"type":"post",
+            	"url":"/index/User/zhong",
+           		"dataType":"json",
+           		"async":true,
+            	"data":{
+            	"bouns":txt,
+            	"username":"{$user['username']}",
+                },
+           		"success":check
+    	});
+				alert("恭喜您抽中"+txt+"元");
 				bRotate = !bRotate;
 			}
 		})
 	};
+	function check(data)
+	{
+		console.log(data);
+	　　window.location.href="/index/User/userinfo";
+
+	}
+
 	
 	$('.pointer').click(function (){
 		var a=[1,18,16,12,2,8,6];

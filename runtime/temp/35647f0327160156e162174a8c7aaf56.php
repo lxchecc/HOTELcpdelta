@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"E:\wamp64\www\git\hotel\public/../application/admin\view\index\index.html";i:1519803130;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"E:\wamp64\www\git\hotel\public/../application/admin\view\index\index.html";i:1519920503;}*/ ?>
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
 <head>
@@ -334,7 +334,7 @@ function link_operating(name,title){
 								<li class="home"><a href="javascript:void(0)" name="/admin/Member/administrator" title="管理员列表" class="iframeurl"><i class="icon-double-angle-right"></i>管理员列表</a></li>
 								<li class="home"><a href="javascript:void(0)" name="/admin/Member/adminInfo?aid=<?php echo $aid; ?>" title="个人信息" class="iframeurl"><i class="icon-double-angle-right"></i>个人信息</a></li>
 								<li class="home"><a href="javascript:void(0)" name="/admin/Member/powerlist" title="权限列表"  class="iframeurl"><i class="icon-double-angle-right"></i>权限列表</a></li>
-
+								<li class="home"><a href="javascript:void(0)" name="/admin/Member/wuxianjilist" title="无限级"  class="iframeurl"><i class="icon-double-angle-right"></i>无限级</a></li>
 							</ul>
 						</li>
 					</ul>

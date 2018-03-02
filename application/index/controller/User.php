@@ -162,8 +162,10 @@ class User extends controller
 	{
 		$uid = Session::get('uid');
 		$result = db::name('user')->where('id',$uid)->find();
-		$newMoney = $result['u_money'] + $_POST['money'];
+
+		$newMoney = $result['u_money'] + $_POST['bouns'];
 		Db::name('user')->where('id',$uid)->update(['u_money'=>"$newMoney"]);
+		return 1;
 	}
 
 	public function log3rd()

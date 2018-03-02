@@ -135,7 +135,7 @@
 									<p>邮箱:{$user.email}</p>
 									<p>身份证:{$user.usersfz|substr=0,14}****</p>
 									<p>钱包:<span style="color:red;">{$user.u_money}</span></p>
-									<button type="button" class="btn btn-lg btn-success" style="font-size:10px;" onclick="cong()">充值</button>
+									<a href=/codepay/index.php?user={$user['username']}><button type="button" class="btn btn-lg btn-success" style="font-size:10px;">充值</button></a>
 									<div class="testimonial-sign">-个人信息</div>
 
 								</div>
