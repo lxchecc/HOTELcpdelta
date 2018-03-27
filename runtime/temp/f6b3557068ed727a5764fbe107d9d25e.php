@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:75:"E:\wamp64\www\git\hotel\public/../application/index\view\user\userinfo.html";i:1519908311;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:75:"E:\wamp64\www\git\hotel\public/../application/index\view\user\userinfo.html";i:1519951478;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -132,9 +132,9 @@
 									<p>手机号:<?php echo $user['tel']; ?></p>
 									<p>邮箱:<?php echo $user['email']; ?></p>
 									<p>身份证:<?php echo substr($user['usersfz'],0,14); ?>****</p>
-									<p>钱包:<span style="color:red;"><?php echo $user['u_money']; ?></span></p>
-									<a href=/codepay/index.php?user=<?php echo $user['username']; ?>><button type="button" class="btn btn-lg btn-success" style="font-size:10px;">充值</button></a>
-									<div class="testimonial-sign">-个人信息</div>
+									<p>钱包:<span style="color:red;"><?php echo $user['u_money']; ?></span></p>                                   <button type="button" class="btn btn-lg btn-success" style="font-size:10px;" onclick="cong()">充值</button>
+                                    <div class="testimonial-sign">-个人信息</div>
+
 
 								</div>
 								<div class="clearfix"></div>

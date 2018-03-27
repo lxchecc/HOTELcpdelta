@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"E:\wamp64\www\git\hotel\public/../application/index\view\index\index.html";i:1519871782;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"E:\wamp64\www\git\hotel\public/../application/index\view\index\index.html";i:1519953649;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -169,7 +169,7 @@
 			<!--welcome-->
 			<div class="welcome">
 				<div class="container">
-					<h2 class="tittle">欢迎光临</h2><span></span>>
+					<h2 class="tittle">欢迎光临</h2><span></span>
 						<p class="wel text">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp这可能是你见过最好的酒店。我们拥有一流的就餐环境，一流的房间质量，整洁的住宿用品，美味可口的佳肴。还有你意想不到的服务，一切只为了你。</p>
 					<div class="wel-grids">
 						<div class="col-md-3 wel-grid">
